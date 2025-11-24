@@ -1,0 +1,32 @@
+{
+    "serial_port": "COM7",
+    "baudrate": 9600,
+    "parity": "N",
+    "stopbits": 1,
+    "databits": 8,
+    "timeout_sec": 1,
+    "poll_interval_sec": 5,
+    "devices": [
+        {
+            "name": "Meter_1",
+            "slave_id": 1
+        },
+        {
+            "name": "Meter_2",
+            "slave_id": 2
+        },
+        {
+            "name": "Meter_3",
+            "slave_id": 3
+        }
+    ],
+    "storage": {
+        "enabled": true,
+        "types": [
+            "csv",
+            "sqlite"
+        ],
+        "csv_directory": "data/csv",
+        "sqlite_path": "data/modbus_data.db"
+    }
+}
