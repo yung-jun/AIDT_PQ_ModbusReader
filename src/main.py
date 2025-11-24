@@ -1,25 +1,24 @@
 """
-CPM-10B Modbus Reader - 主程序入口點
+CPM-10B Modbus Reader - 主程式入口
 """
 import json
 import time
 import logging
-from src.utils import load_config, setup_logging
-from src.reader import CPM10BReader
-from src.storage import StorageManager
+from .utils import load_config, setup_logging
+from .reader import CPM10BReader
+from .storage import StorageManager
 
-# 設置日誌
+# 設置logger
 setup_logging()
 logger = logging.getLogger(__name__)
 
 
 def main():
-    """主函數"""
     try:
         # 載入配置
         config = load_config("config.json")
         
-        # 創建讀取器
+        # 創建Reader
         reader = CPM10BReader(config)
         
         # 初始化存儲管理器
@@ -32,7 +31,6 @@ def main():
             return
         
         try:
-            # 主循環
             while True:
                 start_time = time.time()
                 
@@ -40,7 +38,6 @@ def main():
                 for device in config['devices']:
                     data = reader.poll_device(device)
                     
-                    # 在 Console 印出漂亮的 JSON
                     print(json.dumps(data, indent=2))
                     
                     # 保存數據到存儲

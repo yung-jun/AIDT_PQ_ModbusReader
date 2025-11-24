@@ -55,7 +55,7 @@ pip install -r requirements.txt
 ### 3. 運行程式
 
 ```bash
-python main.py
+python run.py
 ```
 
 ## 功能特性
