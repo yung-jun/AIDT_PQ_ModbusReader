@@ -1,17 +1,16 @@
 """
-存儲管理器 - 統一管理多種存儲方式
+存儲管理器 - CSV 存儲管理
 """
 import logging
 from typing import Dict, Any, List
 from .base import BaseStorage
 from .csv_storage import CSVStorage
-from .sqlite_storage import SQLiteStorage
 
 logger = logging.getLogger(__name__)
 
 
 class StorageManager:
-    """存儲管理器 - 統一管理多種存儲方式"""
+    """存儲管理器 - CSV 存儲管理"""
     
     def __init__(self, config: Dict[str, Any]):
         self.storages: List[BaseStorage] = []
@@ -27,17 +26,17 @@ class StorageManager:
             csv_dir = config.get('csv_directory', 'data/csv')
             self.storages.append(CSVStorage(csv_dir))
         
-        # 初始化 SQLite 存儲
-        if 'sqlite' in storage_types:
-            sqlite_path = config.get('sqlite_path', 'data/modbus_data.db')
-            self.storages.append(SQLiteStorage(sqlite_path))
-        
         logger.info(f"Storage Manager initialized with {len(self.storages)} storage(s)")
     
     def save(self, data: Dict[str, Any]):
-        """保存數據到所有啟用的存儲"""
+        """保存單一設備數據到所有啟用的存儲（向後兼容）"""
         for storage in self.storages:
             storage.save(data)
+    
+    def save_combined(self, devices_data: List[Dict[str, Any]]):
+        """保存合併的多設備數據到所有啟用的存儲（單行格式）"""
+        for storage in self.storages:
+            storage.save_combined(devices_data)
     
     def close(self):
         """關閉所有存儲"""

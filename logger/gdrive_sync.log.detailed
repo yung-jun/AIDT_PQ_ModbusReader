@@ -1,0 +1,1723 @@
+2025/12/09 12:17:28 INFO  : modbus_data_20251124.csv: Copied (new)
+2025/12/09 12:17:28 INFO  : modbus_data_20251208.csv: Copied (new)
+2025/12/09 12:17:28 INFO  : modbus_data_20251209.csv: Copied (new)
+2025/12/09 12:17:28 INFO  : 
+Transferred:   	    1.493 MiB / 1.493 MiB, 100%, 764.516 KiB/s, ETA 0s
+Transferred:            3 / 3, 100%
+Elapsed time:         4.4s
+
+2025/12/09 12:25:24 INFO  : modbus_data_20251209.csv: Copied (replaced existing)
+2025/12/09 12:25:24 INFO  : 
+Transferred:   	    1.302 MiB / 1.302 MiB, 100%, 666.749 KiB/s, ETA 0s
+Checks:                 3 / 3, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:         4.4s
+
+2025/12/09 13:49:01 ERROR : modbus_data_20251209.csv: corrupted on transfer: md5 hash differ "62fc5984a10eba3755545fd5b35a3e81" vs "6969d63115d39245a6923c455f7890e7"
+2025/12/09 13:49:01 INFO  : modbus_data_20251209.csv: Removing failed copy
+2025/12/09 13:49:03 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/09 13:49:03 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/09 13:49:03 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "62fc5984a10eba3755545fd5b35a3e81" vs "6969d63115d39245a6923c455f7890e7"
+2025/12/09 13:49:07 ERROR : modbus_data_20251209.csv: corrupted on transfer: md5 hash differ "267b41beace417d4f13652fe578850d0" vs "62fc5984a10eba3755545fd5b35a3e81"
+2025/12/09 13:49:07 INFO  : modbus_data_20251209.csv: Removing failed copy
+2025/12/09 13:49:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/09 13:49:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/09 13:49:07 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "267b41beace417d4f13652fe578850d0" vs "62fc5984a10eba3755545fd5b35a3e81"
+2025/12/09 13:49:10 ERROR : modbus_data_20251209.csv: corrupted on transfer: md5 hash differ "1f7b21678e8a9b91b1a5ce72550966ee" vs "267b41beace417d4f13652fe578850d0"
+2025/12/09 13:49:10 INFO  : modbus_data_20251209.csv: Removing failed copy
+2025/12/09 13:49:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/09 13:49:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/09 13:49:11 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "1f7b21678e8a9b91b1a5ce72550966ee" vs "267b41beace417d4f13652fe578850d0"
+2025/12/09 13:49:11 INFO  : 
+Transferred:   	    4.388 MiB / 4.388 MiB, 100%, 374.474 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:                 7 / 7, 100%
+Elapsed time:        14.5s
+
+2025/12/09 13:49:11 Failed to sync: corrupted on transfer: md5 hash differ "1f7b21678e8a9b91b1a5ce72550966ee" vs "267b41beace417d4f13652fe578850d0"
+2025/12/09 13:49:25 ERROR : modbus_data_20251209.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 1534525 to 1534693)
+2025/12/09 13:49:25 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/09 13:49:25 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/09 13:49:25 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 1534525 to 1534693)
+2025/12/09 13:49:27 INFO  : modbus_data_20251209.csv: Copied (new)
+2025/12/09 13:49:27 ERROR : Attempt 2/3 succeeded
+2025/12/09 13:49:27 INFO  : 
+Transferred:   	    1.468 MiB / 1.468 MiB, 100%, 500.907 KiB/s, ETA 0s
+Checks:                 4 / 4, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:         4.5s
+
+2025/12/10 03:00:05 INFO  : modbus_data_20251210.csv: Copied (new)
+2025/12/10 03:00:06 INFO  : modbus_data_20251209.csv: Copied (replaced existing)
+2025/12/10 03:00:06 INFO  : 
+Transferred:   	    2.941 MiB / 2.941 MiB, 100%, 1003.991 KiB/s, ETA 0s
+Checks:                 3 / 3, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.3s
+
+2025/12/11 03:00:06 INFO  : modbus_data_20251211.csv: Copied (new)
+2025/12/11 03:00:06 INFO  : modbus_data_20251210.csv: Copied (replaced existing)
+2025/12/11 03:00:06 INFO  : 
+Transferred:   	    2.937 MiB / 2.937 MiB, 100%, 1.468 MiB/s, ETA 0s
+Checks:                 4 / 4, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.6s
+
+2025/12/12 03:00:05 ERROR : modbus_data_20251212.csv: corrupted on transfer: md5 hash differ "4bafcdf5681297a9cd1d888d34cc3e48" vs "335609cd32a648a6a8ef3a0e5add6af2"
+2025/12/12 03:00:05 INFO  : modbus_data_20251212.csv: Removing failed copy
+2025/12/12 03:00:06 INFO  : modbus_data_20251211.csv: Copied (replaced existing)
+2025/12/12 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/12 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/12 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "4bafcdf5681297a9cd1d888d34cc3e48" vs "335609cd32a648a6a8ef3a0e5add6af2"
+2025/12/12 03:00:09 INFO  : modbus_data_20251212.csv: Copied (new)
+2025/12/12 03:00:09 ERROR : Attempt 2/3 succeeded
+2025/12/12 03:00:09 INFO  : 
+Transferred:   	    3.275 MiB / 3.275 MiB, 100%, 670.807 KiB/s, ETA 0s
+Checks:                10 / 10, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.8s
+
+2025/12/13 03:00:05 INFO  : modbus_data_20251213.csv: Copied (new)
+2025/12/13 03:00:06 INFO  : modbus_data_20251212.csv: Copied (replaced existing)
+2025/12/13 03:00:06 INFO  : 
+Transferred:   	    2.937 MiB / 2.937 MiB, 100%, 1002.646 KiB/s, ETA 0s
+Checks:                 6 / 6, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.9s
+
+2025/12/14 03:00:03 ERROR : modbus_data_20251214.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313464 to 313604)
+2025/12/14 03:00:06 INFO  : modbus_data_20251213.csv: Copied (replaced existing)
+2025/12/14 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/14 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/14 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313464 to 313604)
+2025/12/14 03:00:09 ERROR : modbus_data_20251214.csv: corrupted on transfer: md5 hash differ "1d2fa54bb3ce798f1701a98627a1f791" vs "e94c7ce9272f05c90ca9c51509e14ee6"
+2025/12/14 03:00:09 INFO  : modbus_data_20251214.csv: Removing failed copy
+2025/12/14 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/14 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/14 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "1d2fa54bb3ce798f1701a98627a1f791" vs "e94c7ce9272f05c90ca9c51509e14ee6"
+2025/12/14 03:00:12 INFO  : modbus_data_20251214.csv: Copied (new)
+2025/12/14 03:00:12 ERROR : Attempt 3/3 succeeded
+2025/12/14 03:00:12 INFO  : 
+Transferred:   	    3.230 MiB / 3.230 MiB, 100%, 367.493 KiB/s, ETA 0s
+Checks:                21 / 21, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        10.8s
+
+2025/12/15 03:00:06 ERROR : modbus_data_20251215.csv: corrupted on transfer: md5 hash differ "a693279ed109bfe2abe814a716c8eaf3" vs "ac165c53ca5a53e181b433329c07bef3"
+2025/12/15 03:00:06 INFO  : modbus_data_20251215.csv: Removing failed copy
+2025/12/15 03:00:07 INFO  : modbus_data_20251214.csv: Copied (replaced existing)
+2025/12/15 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/15 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/15 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "a693279ed109bfe2abe814a716c8eaf3" vs "ac165c53ca5a53e181b433329c07bef3"
+2025/12/15 03:00:10 INFO  : modbus_data_20251215.csv: Copied (new)
+2025/12/15 03:00:10 ERROR : Attempt 2/3 succeeded
+2025/12/15 03:00:10 INFO  : 
+Transferred:   	    3.225 MiB / 3.225 MiB, 100%, 550.481 KiB/s, ETA 0s
+Checks:                16 / 16, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.8s
+
+2025/12/16 03:00:07 INFO  : modbus_data_20251216.csv: Copied (new)
+2025/12/16 03:00:07 INFO  : modbus_data_20251215.csv: Copied (replaced existing)
+2025/12/16 03:00:07 INFO  : 
+Transferred:   	    2.962 MiB / 2.962 MiB, 100%, 1011.122 KiB/s, ETA 0s
+Checks:                 9 / 9, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.3s
+
+2025/12/17 03:00:04 ERROR : modbus_data_20251217.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313453 to 313593)
+2025/12/17 03:00:07 INFO  : modbus_data_20251216.csv: Copied (replaced existing)
+2025/12/17 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/17 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/17 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313453 to 313593)
+2025/12/17 03:00:09 ERROR : modbus_data_20251217.csv: corrupted on transfer: md5 hash differ "f76ae63bb606b506edc16dc7f13ae1ce" vs "9798690cfd851b494465eaf986c17b77"
+2025/12/17 03:00:09 INFO  : modbus_data_20251217.csv: Removing failed copy
+2025/12/17 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/17 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/17 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "f76ae63bb606b506edc16dc7f13ae1ce" vs "9798690cfd851b494465eaf986c17b77"
+2025/12/17 03:00:14 INFO  : modbus_data_20251217.csv: Copied (new)
+2025/12/17 03:00:14 ERROR : Attempt 3/3 succeeded
+2025/12/17 03:00:14 INFO  : 
+Transferred:   	    3.560 MiB / 3.560 MiB, 100%, 364.588 KiB/s, ETA 0s
+Checks:                30 / 30, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        12.1s
+
+2025/12/18 03:00:06 ERROR : modbus_data_20251218.csv: corrupted on transfer: md5 hash differ "1273f3c8bebc33e38af6bbed9cf77c83" vs "772af8ddc0f35a9794d5d02d9f77e44d"
+2025/12/18 03:00:06 INFO  : modbus_data_20251218.csv: Removing failed copy
+2025/12/18 03:00:07 INFO  : modbus_data_20251217.csv: Copied (replaced existing)
+2025/12/18 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/18 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/18 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "1273f3c8bebc33e38af6bbed9cf77c83" vs "772af8ddc0f35a9794d5d02d9f77e44d"
+2025/12/18 03:00:10 INFO  : modbus_data_20251218.csv: Copied (new)
+2025/12/18 03:00:10 ERROR : Attempt 2/3 succeeded
+2025/12/18 03:00:10 INFO  : 
+Transferred:   	    3.256 MiB / 3.256 MiB, 100%, 555.668 KiB/s, ETA 0s
+Checks:                22 / 22, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.9s
+
+2025/12/19 03:00:06 INFO  : modbus_data_20251219.csv: Copied (new)
+2025/12/19 03:00:07 INFO  : modbus_data_20251218.csv: Copied (replaced existing)
+2025/12/19 03:00:07 INFO  : 
+Transferred:   	    2.987 MiB / 2.987 MiB, 100%, 1019.471 KiB/s, ETA 0s
+Checks:                12 / 12, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.5s
+
+2025/12/20 03:00:06 ERROR : modbus_data_20251220.csv: corrupted on transfer: md5 hash differ "7e5e8e42896c1457488667ceedde53a2" vs "7709cfdd7f96594dc246efc76af09c35"
+2025/12/20 03:00:06 INFO  : modbus_data_20251220.csv: Removing failed copy
+2025/12/20 03:00:06 INFO  : modbus_data_20251219.csv: Copied (replaced existing)
+2025/12/20 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/20 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/20 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "7e5e8e42896c1457488667ceedde53a2" vs "7709cfdd7f96594dc246efc76af09c35"
+2025/12/20 03:00:09 INFO  : modbus_data_20251220.csv: Copied (new)
+2025/12/20 03:00:09 ERROR : Attempt 2/3 succeeded
+2025/12/20 03:00:09 INFO  : 
+Transferred:   	    3.236 MiB / 3.236 MiB, 100%, 552.246 KiB/s, ETA 0s
+Checks:                26 / 26, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.9s
+
+2025/12/21 03:00:05 INFO  : modbus_data_20251221.csv: Copied (new)
+2025/12/21 03:00:06 INFO  : modbus_data_20251220.csv: Copied (replaced existing)
+2025/12/21 03:00:06 INFO  : 
+Transferred:   	    2.929 MiB / 2.929 MiB, 100%, 999.872 KiB/s, ETA 0s
+Checks:                14 / 14, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.9s
+
+2025/12/22 03:00:04 ERROR : modbus_data_20251222.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313451 to 313591)
+2025/12/22 03:00:07 INFO  : modbus_data_20251221.csv: Copied (replaced existing)
+2025/12/22 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/22 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/22 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313451 to 313591)
+2025/12/22 03:00:10 ERROR : modbus_data_20251222.csv: corrupted on transfer: md5 hash differ "2d96d7f28cac0d97ea60261fad6c87ad" vs "2e5d0a67636ddb307b9ba14eadf916db"
+2025/12/22 03:00:10 INFO  : modbus_data_20251222.csv: Removing failed copy
+2025/12/22 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/22 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/22 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "2d96d7f28cac0d97ea60261fad6c87ad" vs "2e5d0a67636ddb307b9ba14eadf916db"
+2025/12/22 03:00:13 INFO  : modbus_data_20251222.csv: Copied (new)
+2025/12/22 03:00:13 ERROR : Attempt 3/3 succeeded
+2025/12/22 03:00:13 INFO  : 
+Transferred:   	    3.226 MiB / 3.226 MiB, 100%, 367.045 KiB/s, ETA 0s
+Checks:                45 / 45, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.7s
+
+2025/12/23 03:00:06 ERROR : modbus_data_20251223.csv: corrupted on transfer: md5 hash differ "2a78ce88a2d08299ba0d36817bed5dd4" vs "c5750d715ed0a50fc641eb699b7c4643"
+2025/12/23 03:00:06 INFO  : modbus_data_20251223.csv: Removing failed copy
+2025/12/23 03:00:08 INFO  : modbus_data_20251222.csv: Copied (replaced existing)
+2025/12/23 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/23 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/23 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "2a78ce88a2d08299ba0d36817bed5dd4" vs "c5750d715ed0a50fc641eb699b7c4643"
+2025/12/23 03:00:11 ERROR : modbus_data_20251223.csv: corrupted on transfer: md5 hash differ "986d5dda794fb686ebfc088ae7a77f53" vs "2a78ce88a2d08299ba0d36817bed5dd4"
+2025/12/23 03:00:11 INFO  : modbus_data_20251223.csv: Removing failed copy
+2025/12/23 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/23 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/23 03:00:12 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "986d5dda794fb686ebfc088ae7a77f53" vs "2a78ce88a2d08299ba0d36817bed5dd4"
+2025/12/23 03:00:15 INFO  : modbus_data_20251223.csv: Copied (new)
+2025/12/23 03:00:15 ERROR : Attempt 3/3 succeeded
+2025/12/23 03:00:15 INFO  : 
+Transferred:   	    3.755 MiB / 3.755 MiB, 100%, 349.546 KiB/s, ETA 0s
+Checks:                48 / 48, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        13.2s
+
+2025/12/24 03:00:06 INFO  : modbus_data_20251224.csv: Copied (new)
+2025/12/24 03:00:07 INFO  : modbus_data_20251223.csv: Copied (replaced existing)
+2025/12/24 03:00:07 INFO  : 
+Transferred:   	    3.191 MiB / 3.191 MiB, 100%, 1.064 MiB/s, ETA 0s
+Checks:                17 / 17, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.0s
+
+2025/12/25 03:00:06 ERROR : modbus_data_20251225.csv: corrupted on transfer: md5 hash differ "0f5eb5d227a8ff41044eebc58e0936fd" vs "5af09047b49b1fbcdbad28380248b0c9"
+2025/12/25 03:00:06 INFO  : modbus_data_20251225.csv: Removing failed copy
+2025/12/25 03:01:38 INFO  : modbus_data_20251224.csv: Copied (replaced existing)
+2025/12/25 03:01:38 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/25 03:01:38 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/25 03:01:38 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "0f5eb5d227a8ff41044eebc58e0936fd" vs "5af09047b49b1fbcdbad28380248b0c9"
+2025/12/25 03:01:41 ERROR : modbus_data_20251225.csv: corrupted on transfer: md5 hash differ "da37154cb4acc30d6483b62b2a2c1d77" vs "d6be1e5076ea064348bd68cd0997f91c"
+2025/12/25 03:01:41 INFO  : modbus_data_20251225.csv: Removing failed copy
+2025/12/25 03:01:42 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/25 03:01:42 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/25 03:01:42 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "da37154cb4acc30d6483b62b2a2c1d77" vs "d6be1e5076ea064348bd68cd0997f91c"
+2025/12/25 03:01:44 ERROR : modbus_data_20251225.csv: corrupted on transfer: md5 hash differ "4e9d9cd323d51d16500e729ec5516852" vs "da37154cb4acc30d6483b62b2a2c1d77"
+2025/12/25 03:01:44 INFO  : modbus_data_20251225.csv: Removing failed copy
+2025/12/25 03:01:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/25 03:01:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/25 03:01:45 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "4e9d9cd323d51d16500e729ec5516852" vs "da37154cb4acc30d6483b62b2a2c1d77"
+2025/12/25 03:01:45 INFO  : 
+Transferred:   	    6.578 MiB / 6.578 MiB, 100%, 138.858 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:                54 / 54, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:      1m43.6s
+
+2025/12/25 03:01:45 Failed to sync: corrupted on transfer: md5 hash differ "4e9d9cd323d51d16500e729ec5516852" vs "da37154cb4acc30d6483b62b2a2c1d77"
+2025/12/26 03:00:05 INFO  : modbus_data_20251226.csv: Copied (new)
+2025/12/26 03:00:06 INFO  : modbus_data_20251225.csv: Copied (new)
+2025/12/26 03:00:06 INFO  : 
+Transferred:   	    3.113 MiB / 3.113 MiB, 100%, 1.556 MiB/s, ETA 0s
+Checks:                18 / 18, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.3s
+
+2025/12/27 03:00:03 ERROR : modbus_data_20251227.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 363079 to 363249)
+2025/12/27 03:00:06 INFO  : modbus_data_20251226.csv: Copied (replaced existing)
+2025/12/27 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/27 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/27 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 363079 to 363249)
+2025/12/27 03:00:09 ERROR : modbus_data_20251227.csv: corrupted on transfer: md5 hash differ "5afa8cabb10c5505ab9c838a8adaee2a" vs "f7c7e95b9fcfbed90347af086b673cc5"
+2025/12/27 03:00:09 INFO  : modbus_data_20251227.csv: Removing failed copy
+2025/12/27 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/27 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/27 03:00:09 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "5afa8cabb10c5505ab9c838a8adaee2a" vs "f7c7e95b9fcfbed90347af086b673cc5"
+2025/12/27 03:00:12 INFO  : modbus_data_20251227.csv: Copied (new)
+2025/12/27 03:00:12 ERROR : Attempt 3/3 succeeded
+2025/12/27 03:00:12 INFO  : 
+Transferred:   	    3.478 MiB / 3.478 MiB, 100%, 395.726 KiB/s, ETA 0s
+Checks:                60 / 60, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.0s
+
+2025/12/28 03:00:06 ERROR : modbus_data_20251228.csv: corrupted on transfer: md5 hash differ "064d0108597216274d2637fc221620e3" vs "f3f228f63bcad9dd0bc40a3e4734066e"
+2025/12/28 03:00:06 INFO  : modbus_data_20251228.csv: Removing failed copy
+2025/12/28 03:00:06 INFO  : modbus_data_20251227.csv: Copied (replaced existing)
+2025/12/28 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/28 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/28 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "064d0108597216274d2637fc221620e3" vs "f3f228f63bcad9dd0bc40a3e4734066e"
+2025/12/28 03:00:09 INFO  : modbus_data_20251228.csv: Copied (new)
+2025/12/28 03:00:09 ERROR : Attempt 2/3 succeeded
+2025/12/28 03:00:09 INFO  : 
+Transferred:   	    3.460 MiB / 3.460 MiB, 100%, 590.577 KiB/s, ETA 0s
+Checks:                42 / 42, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.8s
+
+2025/12/29 03:00:06 INFO  : modbus_data_20251229.csv: Copied (new)
+2025/12/29 03:00:06 INFO  : modbus_data_20251228.csv: Copied (replaced existing)
+2025/12/29 03:00:06 INFO  : 
+Transferred:   	    3.114 MiB / 3.114 MiB, 100%, 1.038 MiB/s, ETA 0s
+Checks:                22 / 22, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.6s
+
+2025/12/30 03:00:06 ERROR : modbus_data_20251230.csv: corrupted on transfer: md5 hash differ "e7f505b8c42663265cabb08faa85f341" vs "9bbb0e5c0c3240a56ffff5e6d37962eb"
+2025/12/30 03:00:06 INFO  : modbus_data_20251230.csv: Removing failed copy
+2025/12/30 03:00:06 INFO  : modbus_data_20251229.csv: Copied (replaced existing)
+2025/12/30 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/30 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/30 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "e7f505b8c42663265cabb08faa85f341" vs "9bbb0e5c0c3240a56ffff5e6d37962eb"
+2025/12/30 03:00:09 ERROR : modbus_data_20251230.csv: corrupted on transfer: md5 hash differ "97faa08077f5418cba6f561654847aaa" vs "e7f505b8c42663265cabb08faa85f341"
+2025/12/30 03:00:09 INFO  : modbus_data_20251230.csv: Removing failed copy
+2025/12/30 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/30 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/30 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "97faa08077f5418cba6f561654847aaa" vs "e7f505b8c42663265cabb08faa85f341"
+2025/12/30 03:00:13 INFO  : modbus_data_20251230.csv: Copied (new)
+2025/12/30 03:00:13 ERROR : Attempt 3/3 succeeded
+2025/12/30 03:00:13 INFO  : 
+Transferred:   	    3.906 MiB / 3.906 MiB, 100%, 444.428 KiB/s, ETA 0s
+Checks:                69 / 69, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.3s
+
+2025/12/31 03:00:06 ERROR : modbus_data_20251231.csv: corrupted on transfer: md5 hash differ "f5fed36d3d66801910176ff6ee58d6ac" vs "4a79a718299e39ae58314f7af6af99cc"
+2025/12/31 03:00:06 INFO  : modbus_data_20251231.csv: Removing failed copy
+2025/12/31 03:00:07 INFO  : modbus_data_20251230.csv: Copied (replaced existing)
+2025/12/31 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2025/12/31 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2025/12/31 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "f5fed36d3d66801910176ff6ee58d6ac" vs "4a79a718299e39ae58314f7af6af99cc"
+2025/12/31 03:00:10 INFO  : modbus_data_20251231.csv: Copied (new)
+2025/12/31 03:00:10 ERROR : Attempt 2/3 succeeded
+2025/12/31 03:00:10 INFO  : 
+Transferred:   	    3.608 MiB / 3.608 MiB, 100%, 615.699 KiB/s, ETA 0s
+Checks:                48 / 48, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.0s
+
+2026/01/01 03:00:05 INFO  : modbus_data_20260101.csv: Copied (new)
+2026/01/01 03:00:07 INFO  : modbus_data_20251231.csv: Copied (replaced existing)
+2026/01/01 03:00:07 INFO  : 
+Transferred:   	    3.225 MiB / 3.225 MiB, 100%, 825.646 KiB/s, ETA 0s
+Checks:                25 / 25, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         6.0s
+
+2026/01/02 03:00:06 ERROR : modbus_data_20260102.csv: corrupted on transfer: md5 hash differ "271439cd15790450430137bc49830a68" vs "907f9c20d2a58dd3caf5432823465ecc"
+2026/01/02 03:00:06 INFO  : modbus_data_20260102.csv: Removing failed copy
+2026/01/02 03:00:07 INFO  : modbus_data_20260101.csv: Copied (replaced existing)
+2026/01/02 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/02 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/02 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "271439cd15790450430137bc49830a68" vs "907f9c20d2a58dd3caf5432823465ecc"
+2026/01/02 03:00:10 ERROR : modbus_data_20260102.csv: corrupted on transfer: md5 hash differ "5bb977603582b0c291b63a02a9fcdce6" vs "271439cd15790450430137bc49830a68"
+2026/01/02 03:00:10 INFO  : modbus_data_20260102.csv: Removing failed copy
+2026/01/02 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/02 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/02 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "5bb977603582b0c291b63a02a9fcdce6" vs "271439cd15790450430137bc49830a68"
+2026/01/02 03:00:13 INFO  : modbus_data_20260102.csv: Copied (new)
+2026/01/02 03:00:13 ERROR : Attempt 3/3 succeeded
+2026/01/02 03:00:13 INFO  : 
+Transferred:   	    3.958 MiB / 3.958 MiB, 100%, 450.298 KiB/s, ETA 0s
+Checks:                78 / 78, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.5s
+
+2026/01/03 03:00:05 INFO  : modbus_data_20260103.csv: Copied (new)
+2026/01/03 03:00:06 INFO  : modbus_data_20260102.csv: Copied (replaced existing)
+2026/01/03 03:00:06 INFO  : 
+Transferred:   	    3.237 MiB / 3.237 MiB, 100%, 1.619 MiB/s, ETA 0s
+Checks:                27 / 27, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.7s
+
+2026/01/04 03:00:03 ERROR : modbus_data_20260104.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 377506 to 377680)
+2026/01/04 03:00:06 INFO  : modbus_data_20260103.csv: Copied (replaced existing)
+2026/01/04 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/04 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/04 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 377506 to 377680)
+2026/01/04 03:00:09 ERROR : modbus_data_20260104.csv: corrupted on transfer: md5 hash differ "98d7af2a80600bc21218dc94dc559e05" vs "d5ab8f19c47b4cca895256f38d489369"
+2026/01/04 03:00:09 INFO  : modbus_data_20260104.csv: Removing failed copy
+2026/01/04 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/04 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/04 03:00:09 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "98d7af2a80600bc21218dc94dc559e05" vs "d5ab8f19c47b4cca895256f38d489369"
+2026/01/04 03:00:12 INFO  : modbus_data_20260104.csv: Copied (new)
+2026/01/04 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/01/04 03:00:12 INFO  : 
+Transferred:   	    3.598 MiB / 3.598 MiB, 100%, 460.518 KiB/s, ETA 0s
+Checks:                84 / 84, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        10.8s
+
+2026/01/05 03:00:05 ERROR : modbus_data_20260105.csv: corrupted on transfer: md5 hash differ "e5cebbfc02933025db9847c1c1f2e8d9" vs "920b0732d861f43fd18da359050fcb1c"
+2026/01/05 03:00:05 INFO  : modbus_data_20260105.csv: Removing failed copy
+2026/01/05 03:00:06 INFO  : modbus_data_20260104.csv: Copied (replaced existing)
+2026/01/05 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/05 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/05 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "e5cebbfc02933025db9847c1c1f2e8d9" vs "920b0732d861f43fd18da359050fcb1c"
+2026/01/05 03:00:09 INFO  : modbus_data_20260105.csv: Copied (new)
+2026/01/05 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/01/05 03:00:09 INFO  : 
+Transferred:   	    3.599 MiB / 3.599 MiB, 100%, 737.004 KiB/s, ETA 0s
+Checks:                58 / 58, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.4s
+
+2026/01/06 03:00:05 INFO  : modbus_data_20260106.csv: Copied (new)
+2026/01/06 03:00:06 INFO  : modbus_data_20260105.csv: Copied (replaced existing)
+2026/01/06 03:00:06 INFO  : 
+Transferred:   	    3.237 MiB / 3.237 MiB, 100%, 1.079 MiB/s, ETA 0s
+Checks:                30 / 30, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.8s
+
+2026/01/07 03:00:06 ERROR : modbus_data_20260107.csv: corrupted on transfer: md5 hash differ "a599e28d725efaa6fba25c7a074172ef" vs "c5b1b1b823d70dd43c450e6780bc514b"
+2026/01/07 03:00:06 INFO  : modbus_data_20260107.csv: Removing failed copy
+2026/01/07 03:00:06 INFO  : modbus_data_20260106.csv: Copied (replaced existing)
+2026/01/07 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/07 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/07 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "a599e28d725efaa6fba25c7a074172ef" vs "c5b1b1b823d70dd43c450e6780bc514b"
+2026/01/07 03:00:09 ERROR : modbus_data_20260107.csv: corrupted on transfer: md5 hash differ "74805a399cd777fd1d3056335d6306bd" vs "a599e28d725efaa6fba25c7a074172ef"
+2026/01/07 03:00:09 INFO  : modbus_data_20260107.csv: Removing failed copy
+2026/01/07 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/07 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/07 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "74805a399cd777fd1d3056335d6306bd" vs "a599e28d725efaa6fba25c7a074172ef"
+2026/01/07 03:00:12 INFO  : modbus_data_20260107.csv: Copied (new)
+2026/01/07 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/01/07 03:00:12 INFO  : 
+Transferred:   	    3.913 MiB / 3.913 MiB, 100%, 445.165 KiB/s, ETA 0s
+Checks:                93 / 93, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.2s
+
+2026/01/08 03:00:06 ERROR : modbus_data_20260108.csv: corrupted on transfer: md5 hash differ "ac1bb0a39f53c3c702fb7c1b1d76b815" vs "a40aebe5e822ddcab6899b8bc6f4e023"
+2026/01/08 03:00:06 INFO  : modbus_data_20260108.csv: Removing failed copy
+2026/01/08 03:00:07 INFO  : modbus_data_20260107.csv: Copied (replaced existing)
+2026/01/08 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/08 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/08 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "ac1bb0a39f53c3c702fb7c1b1d76b815" vs "a40aebe5e822ddcab6899b8bc6f4e023"
+2026/01/08 03:00:10 INFO  : modbus_data_20260108.csv: Copied (new)
+2026/01/08 03:00:10 ERROR : Attempt 2/3 succeeded
+2026/01/08 03:00:10 INFO  : 
+Transferred:   	    3.538 MiB / 3.538 MiB, 100%, 603.839 KiB/s, ETA 0s
+Checks:                64 / 64, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.1s
+
+2026/01/09 03:00:03 ERROR : modbus_data_20260109.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 371299 to 371472)
+2026/01/09 03:00:07 INFO  : modbus_data_20260108.csv: Copied (replaced existing)
+2026/01/09 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/09 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/09 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 371299 to 371472)
+2026/01/09 03:00:09 ERROR : modbus_data_20260109.csv: corrupted on transfer: md5 hash differ "d2edbfbd4271faaf434a3d5023421620" vs "a01ccf700dfe7e678f5442600dc31567"
+2026/01/09 03:00:09 INFO  : modbus_data_20260109.csv: Removing failed copy
+2026/01/09 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/09 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/09 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "d2edbfbd4271faaf434a3d5023421620" vs "a01ccf700dfe7e678f5442600dc31567"
+2026/01/09 03:00:13 ERROR : modbus_data_20260109.csv: corrupted on transfer: md5 hash differ "3a74c43dfb3f853400e4a59716a0fc12" vs "d2edbfbd4271faaf434a3d5023421620"
+2026/01/09 03:00:13 INFO  : modbus_data_20260109.csv: Removing failed copy
+2026/01/09 03:00:13 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/09 03:00:13 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/09 03:00:13 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "3a74c43dfb3f853400e4a59716a0fc12" vs "d2edbfbd4271faaf434a3d5023421620"
+2026/01/09 03:00:13 INFO  : 
+Transferred:   	    3.539 MiB / 3.539 MiB, 100%, 362.388 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:                99 / 99, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        12.3s
+
+2026/01/09 03:00:13 Failed to sync: corrupted on transfer: md5 hash differ "3a74c43dfb3f853400e4a59716a0fc12" vs "d2edbfbd4271faaf434a3d5023421620"
+2026/01/10 03:00:07 ERROR : modbus_data_20260110.csv: corrupted on transfer: md5 hash differ "b3eac78c3a0dfc3b216d2099b851a117" vs "abd3c59c574ab2cb7cf7363b776ea75b"
+2026/01/10 03:00:07 INFO  : modbus_data_20260110.csv: Removing failed copy
+2026/01/10 03:00:07 INFO  : modbus_data_20260109.csv: Copied (new)
+2026/01/10 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/10 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/10 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "b3eac78c3a0dfc3b216d2099b851a117" vs "abd3c59c574ab2cb7cf7363b776ea75b"
+2026/01/10 03:00:10 ERROR : modbus_data_20260110.csv: corrupted on transfer: md5 hash differ "d9aad76c2bbe89c7f98bb9166293022b" vs "b3eac78c3a0dfc3b216d2099b851a117"
+2026/01/10 03:00:10 INFO  : modbus_data_20260110.csv: Removing failed copy
+2026/01/10 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/10 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/10 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "d9aad76c2bbe89c7f98bb9166293022b" vs "b3eac78c3a0dfc3b216d2099b851a117"
+2026/01/10 03:00:13 INFO  : modbus_data_20260110.csv: Copied (new)
+2026/01/10 03:00:13 ERROR : Attempt 3/3 succeeded
+2026/01/10 03:00:13 INFO  : 
+Transferred:   	    3.893 MiB / 3.893 MiB, 100%, 442.892 KiB/s, ETA 0s
+Checks:               101 / 101, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.3s
+
+2026/01/11 03:00:06 INFO  : modbus_data_20260111.csv: Copied (new)
+2026/01/11 03:00:07 INFO  : modbus_data_20260110.csv: Copied (replaced existing)
+2026/01/11 03:00:07 INFO  : 
+Transferred:   	    3.151 MiB / 3.151 MiB, 100%, 1.050 MiB/s, ETA 0s
+Checks:                35 / 35, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.8s
+
+2026/01/12 03:00:03 ERROR : modbus_data_20260112.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 365150 to 365319)
+2026/01/12 03:00:06 INFO  : modbus_data_20260111.csv: Copied (replaced existing)
+2026/01/12 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/12 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/12 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 365150 to 365319)
+2026/01/12 03:00:09 ERROR : modbus_data_20260112.csv: corrupted on transfer: md5 hash differ "aba9aea4e3d25f5097d94cbc856e55ff" vs "451e453d1c21a37673e9421e1113759b"
+2026/01/12 03:00:09 INFO  : modbus_data_20260112.csv: Removing failed copy
+2026/01/12 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/12 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/12 03:00:09 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "aba9aea4e3d25f5097d94cbc856e55ff" vs "451e453d1c21a37673e9421e1113759b"
+2026/01/12 03:00:12 INFO  : modbus_data_20260112.csv: Copied (new)
+2026/01/12 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/01/12 03:00:12 INFO  : 
+Transferred:   	    3.481 MiB / 3.481 MiB, 100%, 445.544 KiB/s, ETA 0s
+Checks:               108 / 108, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        10.2s
+
+2026/01/13 03:00:07 ERROR : modbus_data_20260113.csv: corrupted on transfer: md5 hash differ "a51b3140001be00c471e2a837fdff258" vs "3737317fcd397daf9285222f86c4fd5a"
+2026/01/13 03:00:07 INFO  : modbus_data_20260113.csv: Removing failed copy
+2026/01/13 03:00:07 INFO  : modbus_data_20260112.csv: Copied (replaced existing)
+2026/01/13 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/13 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/13 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "a51b3140001be00c471e2a837fdff258" vs "3737317fcd397daf9285222f86c4fd5a"
+2026/01/13 03:00:11 ERROR : modbus_data_20260113.csv: corrupted on transfer: md5 hash differ "14e11eb155b79ff5380ef8a4303419b9" vs "a51b3140001be00c471e2a837fdff258"
+2026/01/13 03:00:11 INFO  : modbus_data_20260113.csv: Removing failed copy
+2026/01/13 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/13 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/13 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "14e11eb155b79ff5380ef8a4303419b9" vs "a51b3140001be00c471e2a837fdff258"
+2026/01/13 03:00:14 INFO  : modbus_data_20260113.csv: Copied (new)
+2026/01/13 03:00:14 ERROR : Attempt 3/3 succeeded
+2026/01/13 03:00:14 INFO  : 
+Transferred:   	    3.830 MiB / 3.830 MiB, 100%, 392.153 KiB/s, ETA 0s
+Checks:               111 / 111, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        12.4s
+
+2026/01/14 03:00:05 INFO  : modbus_data_20260114.csv: Copied (new)
+2026/01/14 03:00:06 INFO  : modbus_data_20260113.csv: Copied (replaced existing)
+2026/01/14 03:00:06 INFO  : 
+Transferred:   	    3.132 MiB / 3.132 MiB, 100%, 1.044 MiB/s, ETA 0s
+Checks:                38 / 38, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.9s
+
+2026/01/15 03:00:04 ERROR : modbus_data_20260115.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 364846 to 365014)
+2026/01/15 03:00:08 INFO  : modbus_data_20260114.csv: Copied (replaced existing)
+2026/01/15 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/15 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/15 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 364846 to 365014)
+2026/01/15 03:00:11 ERROR : modbus_data_20260115.csv: corrupted on transfer: md5 hash differ "c5f921132c288dfcc8e2469994678ff5" vs "c3f5ef59c61a3653b891dd09c81b6993"
+2026/01/15 03:00:11 INFO  : modbus_data_20260115.csv: Removing failed copy
+2026/01/15 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/15 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/15 03:00:12 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "c5f921132c288dfcc8e2469994678ff5" vs "c3f5ef59c61a3653b891dd09c81b6993"
+2026/01/15 03:00:15 ERROR : modbus_data_20260115.csv: corrupted on transfer: md5 hash differ "f66e582511d57c5fb0816c8f99d04cc6" vs "c5f921132c288dfcc8e2469994678ff5"
+2026/01/15 03:00:15 INFO  : modbus_data_20260115.csv: Removing failed copy
+2026/01/15 03:00:16 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/15 03:00:16 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/15 03:00:16 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "f66e582511d57c5fb0816c8f99d04cc6" vs "c5f921132c288dfcc8e2469994678ff5"
+2026/01/15 03:00:16 INFO  : 
+Transferred:   	    3.481 MiB / 3.481 MiB, 100%, 297.011 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               117 / 117, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        14.5s
+
+2026/01/15 03:00:16 Failed to sync: corrupted on transfer: md5 hash differ "f66e582511d57c5fb0816c8f99d04cc6" vs "c5f921132c288dfcc8e2469994678ff5"
+2026/01/16 03:00:06 ERROR : modbus_data_20260116.csv: corrupted on transfer: md5 hash differ "765bdaea7df02f541a9bb882c15a1b70" vs "07752debcb8abd0187fd1f3bbdf58ec8"
+2026/01/16 03:00:06 INFO  : modbus_data_20260116.csv: Removing failed copy
+2026/01/16 03:00:08 INFO  : modbus_data_20260115.csv: Copied (new)
+2026/01/16 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/16 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/16 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "765bdaea7df02f541a9bb882c15a1b70" vs "07752debcb8abd0187fd1f3bbdf58ec8"
+2026/01/16 03:00:11 INFO  : modbus_data_20260116.csv: Copied (new)
+2026/01/16 03:00:11 ERROR : Attempt 2/3 succeeded
+2026/01/16 03:00:11 INFO  : 
+Transferred:   	    3.481 MiB / 3.481 MiB, 100%, 509.215 KiB/s, ETA 0s
+Checks:                79 / 79, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         9.3s
+
+2026/01/17 03:00:06 INFO  : modbus_data_20260117.csv: Copied (new)
+2026/01/17 03:00:08 INFO  : modbus_data_20260116.csv: Copied (replaced existing)
+2026/01/17 03:00:08 INFO  : 
+Transferred:   	    3.132 MiB / 3.132 MiB, 100%, 801.841 KiB/s, ETA 0s
+Checks:                41 / 41, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         6.4s
+
+2026/01/18 03:00:05 ERROR : modbus_data_20260118.csv: corrupted on transfer: md5 hash differ "eeb77f84622a014f1ba4ac375a719b10" vs "83bc86e72e77c387c71a36085159b2f0"
+2026/01/18 03:00:05 INFO  : modbus_data_20260118.csv: Removing failed copy
+2026/01/18 03:00:07 INFO  : modbus_data_20260117.csv: Copied (replaced existing)
+2026/01/18 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/18 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/18 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "eeb77f84622a014f1ba4ac375a719b10" vs "83bc86e72e77c387c71a36085159b2f0"
+2026/01/18 03:00:10 ERROR : modbus_data_20260118.csv: corrupted on transfer: md5 hash differ "bf601f27af196f75ecba38d3582a7205" vs "eeb77f84622a014f1ba4ac375a719b10"
+2026/01/18 03:00:10 INFO  : modbus_data_20260118.csv: Removing failed copy
+2026/01/18 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/18 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/18 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "bf601f27af196f75ecba38d3582a7205" vs "eeb77f84622a014f1ba4ac375a719b10"
+2026/01/18 03:00:14 INFO  : modbus_data_20260118.csv: Copied (new)
+2026/01/18 03:00:14 ERROR : Attempt 3/3 succeeded
+2026/01/18 03:00:14 INFO  : 
+Transferred:   	    3.829 MiB / 3.829 MiB, 100%, 392.068 KiB/s, ETA 0s
+Checks:               126 / 126, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        12.5s
+
+2026/01/19 03:00:06 INFO  : modbus_data_20260119.csv: Copied (new)
+2026/01/19 03:00:07 INFO  : modbus_data_20260118.csv: Copied (replaced existing)
+2026/01/19 03:00:07 INFO  : 
+Transferred:   	    3.132 MiB / 3.132 MiB, 100%, 1.044 MiB/s, ETA 0s
+Checks:                43 / 43, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.2s
+
+2026/01/20 03:00:06 INFO  : modbus_data_20260120.csv: Copied (new)
+2026/01/20 03:00:07 INFO  : modbus_data_20260119.csv: Copied (replaced existing)
+2026/01/20 03:00:07 INFO  : 
+Transferred:   	    3.188 MiB / 3.188 MiB, 100%, 1.594 MiB/s, ETA 0s
+Checks:                44 / 44, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.7s
+
+2026/01/21 03:00:07 ERROR : modbus_data_20260121.csv: corrupted on transfer: md5 hash differ "b085a05a049d40015bf578bf4e101615" vs "6a9d6cf702efad6b971cbc0da223f522"
+2026/01/21 03:00:07 INFO  : modbus_data_20260121.csv: Removing failed copy
+2026/01/21 03:00:08 INFO  : modbus_data_20260120.csv: Copied (replaced existing)
+2026/01/21 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/21 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/21 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "b085a05a049d40015bf578bf4e101615" vs "6a9d6cf702efad6b971cbc0da223f522"
+2026/01/21 03:00:11 INFO  : modbus_data_20260121.csv: Copied (new)
+2026/01/21 03:00:11 ERROR : Attempt 2/3 succeeded
+2026/01/21 03:00:11 INFO  : 
+Transferred:   	    3.500 MiB / 3.500 MiB, 100%, 597.419 KiB/s, ETA 0s
+Checks:                90 / 90, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.1s
+
+2026/01/22 03:00:04 ERROR : modbus_data_20260122.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 365326 to 365495)
+2026/01/22 03:00:07 INFO  : modbus_data_20260121.csv: Copied (replaced existing)
+2026/01/22 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/22 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/22 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 365326 to 365495)
+2026/01/22 03:00:10 ERROR : modbus_data_20260122.csv: corrupted on transfer: md5 hash differ "2dc75d72a8176bcea9c6d6bce439f0ed" vs "0a01368a5ca86c05823bae1de83edf19"
+2026/01/22 03:00:10 INFO  : modbus_data_20260122.csv: Removing failed copy
+2026/01/22 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/22 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/22 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "2dc75d72a8176bcea9c6d6bce439f0ed" vs "0a01368a5ca86c05823bae1de83edf19"
+2026/01/22 03:00:13 INFO  : modbus_data_20260122.csv: Copied (new)
+2026/01/22 03:00:13 ERROR : Attempt 3/3 succeeded
+2026/01/22 03:00:13 INFO  : 
+Transferred:   	    3.481 MiB / 3.481 MiB, 100%, 396.043 KiB/s, ETA 0s
+Checks:               138 / 138, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.5s
+
+2026/01/23 03:00:06 ERROR : modbus_data_20260123.csv: corrupted on transfer: md5 hash differ "7815d09a707a83e1d08e8e0a5082669f" vs "21b8f72f7af66fc48c7981262e993df2"
+2026/01/23 03:00:06 INFO  : modbus_data_20260123.csv: Removing failed copy
+2026/01/23 03:00:07 INFO  : modbus_data_20260122.csv: Copied (replaced existing)
+2026/01/23 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/23 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/23 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "7815d09a707a83e1d08e8e0a5082669f" vs "21b8f72f7af66fc48c7981262e993df2"
+2026/01/23 03:00:11 ERROR : modbus_data_20260123.csv: corrupted on transfer: md5 hash differ "bfdb21713f752dc48d445c46e9095b6b" vs "7815d09a707a83e1d08e8e0a5082669f"
+2026/01/23 03:00:11 INFO  : modbus_data_20260123.csv: Removing failed copy
+2026/01/23 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/23 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/23 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "bfdb21713f752dc48d445c46e9095b6b" vs "7815d09a707a83e1d08e8e0a5082669f"
+2026/01/23 03:00:14 INFO  : modbus_data_20260123.csv: Copied (new)
+2026/01/23 03:00:14 ERROR : Attempt 3/3 succeeded
+2026/01/23 03:00:14 INFO  : 
+Transferred:   	    3.829 MiB / 3.829 MiB, 100%, 392.117 KiB/s, ETA 0s
+Checks:               141 / 141, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        12.5s
+
+2026/01/24 03:00:06 INFO  : modbus_data_20260124.csv: Copied (new)
+2026/01/24 03:00:07 INFO  : modbus_data_20260123.csv: Copied (replaced existing)
+2026/01/24 03:00:07 INFO  : 
+Transferred:   	    3.132 MiB / 3.132 MiB, 100%, 1.044 MiB/s, ETA 0s
+Checks:                48 / 48, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.5s
+
+2026/01/25 03:00:06 ERROR : modbus_data_20260125.csv: corrupted on transfer: md5 hash differ "c70fb4fd643a01f52d9477af38a8ec1d" vs "008841986380e9ec9cf836e63f5cf169"
+2026/01/25 03:00:06 INFO  : modbus_data_20260125.csv: Removing failed copy
+2026/01/25 03:00:07 INFO  : modbus_data_20260124.csv: Copied (replaced existing)
+2026/01/25 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/25 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/25 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "c70fb4fd643a01f52d9477af38a8ec1d" vs "008841986380e9ec9cf836e63f5cf169"
+2026/01/25 03:00:10 ERROR : modbus_data_20260125.csv: corrupted on transfer: md5 hash differ "8c91de87ecc8fea98208ca37c5bc6b66" vs "c70fb4fd643a01f52d9477af38a8ec1d"
+2026/01/25 03:00:10 INFO  : modbus_data_20260125.csv: Removing failed copy
+2026/01/25 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/25 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/25 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "8c91de87ecc8fea98208ca37c5bc6b66" vs "c70fb4fd643a01f52d9477af38a8ec1d"
+2026/01/25 03:00:13 INFO  : modbus_data_20260125.csv: Copied (new)
+2026/01/25 03:00:13 ERROR : Attempt 3/3 succeeded
+2026/01/25 03:00:13 INFO  : 
+Transferred:   	    3.829 MiB / 3.829 MiB, 100%, 392.126 KiB/s, ETA 0s
+Checks:               147 / 147, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        12.1s
+
+2026/01/26 03:00:05 INFO  : modbus_data_20260126.csv: Copied (new)
+2026/01/26 03:00:06 INFO  : modbus_data_20260125.csv: Copied (replaced existing)
+2026/01/26 03:00:06 INFO  : 
+Transferred:   	    3.133 MiB / 3.133 MiB, 100%, 1.044 MiB/s, ETA 0s
+Checks:                50 / 50, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.0s
+
+2026/01/27 03:00:07 ERROR : modbus_data_20260127.csv: corrupted on transfer: md5 hash differ "7418afb93f8aaf1a2868cf3ac52cbe64" vs "281927c368d9bca4b90d020c328ab20a"
+2026/01/27 03:00:07 INFO  : modbus_data_20260127.csv: Removing failed copy
+2026/01/27 03:00:08 INFO  : modbus_data_20260126.csv: Copied (replaced existing)
+2026/01/27 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/27 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/27 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "7418afb93f8aaf1a2868cf3ac52cbe64" vs "281927c368d9bca4b90d020c328ab20a"
+2026/01/27 03:00:11 INFO  : modbus_data_20260127.csv: Copied (new)
+2026/01/27 03:00:11 ERROR : Attempt 2/3 succeeded
+2026/01/27 03:00:11 INFO  : 
+Transferred:   	    3.332 MiB / 3.332 MiB, 100%, 568.642 KiB/s, ETA 0s
+Checks:               102 / 102, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.1s
+
+2026/01/28 03:00:04 ERROR : modbus_data_20260128.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 318152 to 318292)
+2026/01/28 03:00:06 INFO  : modbus_data_20260127.csv: Copied (replaced existing)
+2026/01/28 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/28 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/28 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 318152 to 318292)
+2026/01/28 03:00:09 ERROR : modbus_data_20260128.csv: corrupted on transfer: md5 hash differ "d459ffa97bcf7d1f87981568dc70ce18" vs "31a44778b8a7ddb650ab9ba2ff74125f"
+2026/01/28 03:00:09 INFO  : modbus_data_20260128.csv: Removing failed copy
+2026/01/28 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/28 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/28 03:00:09 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "d459ffa97bcf7d1f87981568dc70ce18" vs "31a44778b8a7ddb650ab9ba2ff74125f"
+2026/01/28 03:00:12 INFO  : modbus_data_20260128.csv: Copied (new)
+2026/01/28 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/01/28 03:00:12 INFO  : 
+Transferred:   	    3.070 MiB / 3.070 MiB, 100%, 392.910 KiB/s, ETA 0s
+Checks:               156 / 156, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        10.7s
+
+2026/01/29 03:00:06 ERROR : modbus_data_20260129.csv: corrupted on transfer: md5 hash differ "00dac5d3bf9489c251cb2bb6a3238936" vs "b1e55f719f3d46dcba86008cf18b39e8"
+2026/01/29 03:00:06 INFO  : modbus_data_20260129.csv: Removing failed copy
+2026/01/29 03:00:06 INFO  : modbus_data_20260128.csv: Copied (replaced existing)
+2026/01/29 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/29 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/29 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "00dac5d3bf9489c251cb2bb6a3238936" vs "b1e55f719f3d46dcba86008cf18b39e8"
+2026/01/29 03:00:10 INFO  : modbus_data_20260129.csv: Copied (new)
+2026/01/29 03:00:10 ERROR : Attempt 2/3 succeeded
+2026/01/29 03:00:10 INFO  : 
+Transferred:   	    3.281 MiB / 3.281 MiB, 100%, 559.900 KiB/s, ETA 0s
+Checks:               106 / 106, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.9s
+
+2026/01/30 03:00:06 INFO  : modbus_data_20260130.csv: Copied (new)
+2026/01/30 03:00:06 INFO  : modbus_data_20260129.csv: Copied (replaced existing)
+2026/01/30 03:00:06 INFO  : 
+Transferred:   	    2.997 MiB / 2.997 MiB, 100%, 1.499 MiB/s, ETA 0s
+Checks:                54 / 54, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.6s
+
+2026/01/31 03:00:03 ERROR : modbus_data_20260131.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 319827 to 319968)
+2026/01/31 03:00:06 INFO  : modbus_data_20260130.csv: Copied (replaced existing)
+2026/01/31 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/31 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/31 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 319827 to 319968)
+2026/01/31 03:00:08 ERROR : modbus_data_20260131.csv: corrupted on transfer: md5 hash differ "9fabc59567b9af5b5c093ca4e6f580fa" vs "b89e1ede006c7c9249c7055b7003fcc9"
+2026/01/31 03:00:08 INFO  : modbus_data_20260131.csv: Removing failed copy
+2026/01/31 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/01/31 03:00:09 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/01/31 03:00:09 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "9fabc59567b9af5b5c093ca4e6f580fa" vs "b89e1ede006c7c9249c7055b7003fcc9"
+2026/01/31 03:00:12 INFO  : modbus_data_20260131.csv: Copied (new)
+2026/01/31 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/01/31 03:00:12 INFO  : 
+Transferred:   	    3.313 MiB / 3.313 MiB, 100%, 376.953 KiB/s, ETA 0s
+Checks:               165 / 165, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        10.9s
+
+2026/02/01 03:00:06 ERROR : modbus_data_20260201.csv: corrupted on transfer: md5 hash differ "69b62bddf545cbd212e73cde34236fea" vs "bcf8b3df4c92e924d6b6a6bd56155d91"
+2026/02/01 03:00:06 INFO  : modbus_data_20260201.csv: Removing failed copy
+2026/02/01 03:00:06 INFO  : modbus_data_20260131.csv: Copied (replaced existing)
+2026/02/01 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/01 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/01 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "69b62bddf545cbd212e73cde34236fea" vs "bcf8b3df4c92e924d6b6a6bd56155d91"
+2026/02/01 03:00:09 INFO  : modbus_data_20260201.csv: Copied (new)
+2026/02/01 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/02/01 03:00:09 INFO  : 
+Transferred:   	    3.274 MiB / 3.274 MiB, 100%, 670.608 KiB/s, ETA 0s
+Checks:               112 / 112, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.2s
+
+2026/02/02 03:00:05 INFO  : modbus_data_20260202.csv: Copied (new)
+2026/02/02 03:00:06 INFO  : modbus_data_20260201.csv: Copied (replaced existing)
+2026/02/02 03:00:06 INFO  : 
+Transferred:   	    2.964 MiB / 2.964 MiB, 100%, 1011.882 KiB/s, ETA 0s
+Checks:                57 / 57, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.5s
+
+2026/02/03 03:00:04 ERROR : modbus_data_20260203.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 318156 to 318296)
+2026/02/03 03:00:07 INFO  : modbus_data_20260202.csv: Copied (replaced existing)
+2026/02/03 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/03 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/03 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 318156 to 318296)
+2026/02/03 03:00:10 ERROR : modbus_data_20260203.csv: corrupted on transfer: md5 hash differ "646b59a19779bcd8f3787f263e28c77f" vs "0c8a2f3575f796d6a8b5f7458194b076"
+2026/02/03 03:00:10 INFO  : modbus_data_20260203.csv: Removing failed copy
+2026/02/03 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/03 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/03 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "646b59a19779bcd8f3787f263e28c77f" vs "0c8a2f3575f796d6a8b5f7458194b076"
+2026/02/03 03:00:13 INFO  : modbus_data_20260203.csv: Copied (new)
+2026/02/03 03:00:13 ERROR : Attempt 3/3 succeeded
+2026/02/03 03:00:13 INFO  : 
+Transferred:   	    3.279 MiB / 3.279 MiB, 100%, 373.102 KiB/s, ETA 0s
+Checks:               174 / 174, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.5s
+
+2026/02/04 03:00:06 ERROR : modbus_data_20260204.csv: corrupted on transfer: md5 hash differ "7bafae3ee36072bffc5c33907e08ff17" vs "8401f31ba4f50f2f673b9f74c798b9f7"
+2026/02/04 03:00:06 INFO  : modbus_data_20260204.csv: Removing failed copy
+2026/02/04 03:00:08 INFO  : modbus_data_20260203.csv: Copied (replaced existing)
+2026/02/04 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/04 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/04 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "7bafae3ee36072bffc5c33907e08ff17" vs "8401f31ba4f50f2f673b9f74c798b9f7"
+2026/02/04 03:00:10 INFO  : modbus_data_20260204.csv: Copied (new)
+2026/02/04 03:00:10 ERROR : Attempt 2/3 succeeded
+2026/02/04 03:00:10 INFO  : 
+Transferred:   	    3.315 MiB / 3.315 MiB, 100%, 484.973 KiB/s, ETA 0s
+Checks:               118 / 118, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         9.3s
+
+2026/02/05 03:00:03 ERROR : modbus_data_20260205.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 369546 to 369719)
+2026/02/05 03:00:07 INFO  : modbus_data_20260204.csv: Copied (replaced existing)
+2026/02/05 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/05 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/05 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 369546 to 369719)
+2026/02/05 03:00:08 ERROR : modbus_data_20260205.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 369719 to 369890)
+2026/02/05 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/05 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/05 03:00:08 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 369719 to 369890)
+2026/02/05 03:00:10 INFO  : modbus_data_20260205.csv: Copied (new)
+2026/02/05 03:00:10 ERROR : Attempt 3/3 succeeded
+2026/02/05 03:00:10 INFO  : 
+Transferred:   	    3.493 MiB / 3.493 MiB, 100%, 511.004 KiB/s, ETA 0s
+Checks:               180 / 180, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         9.5s
+
+2026/02/06 03:00:05 ERROR : modbus_data_20260206.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 368960 to 369132)
+2026/02/06 03:00:10 INFO  : modbus_data_20260205.csv: Copied (replaced existing)
+2026/02/06 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/06 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/06 03:00:10 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 368960 to 369132)
+2026/02/06 03:00:13 INFO  : modbus_data_20260206.csv: Copied (new)
+2026/02/06 03:00:13 ERROR : Attempt 2/3 succeeded
+2026/02/06 03:00:13 INFO  : 
+Transferred:   	    3.484 MiB / 3.484 MiB, 100%, 396.354 KiB/s, ETA 0s
+Checks:               122 / 122, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.3s
+
+2026/02/07 03:00:06 INFO  : modbus_data_20260207.csv: Copied (new)
+2026/02/07 03:00:07 INFO  : modbus_data_20260206.csv: Copied (replaced existing)
+2026/02/07 03:00:07 INFO  : 
+Transferred:   	    3.166 MiB / 3.166 MiB, 100%, 1.055 MiB/s, ETA 0s
+Checks:                62 / 62, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.6s
+
+2026/02/08 03:00:03 ERROR : modbus_data_20260208.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321845 to 321986)
+2026/02/08 03:00:07 INFO  : modbus_data_20260207.csv: Copied (replaced existing)
+2026/02/08 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/08 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/08 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321845 to 321986)
+2026/02/08 03:00:09 ERROR : modbus_data_20260208.csv: corrupted on transfer: md5 hash differ "be566a0608005c83eb93fb84a6d27bb1" vs "4858fa5ca53b687d2467deb67f66722d"
+2026/02/08 03:00:09 INFO  : modbus_data_20260208.csv: Removing failed copy
+2026/02/08 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/08 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/08 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "be566a0608005c83eb93fb84a6d27bb1" vs "4858fa5ca53b687d2467deb67f66722d"
+2026/02/08 03:00:13 ERROR : modbus_data_20260208.csv: corrupted on transfer: md5 hash differ "b021e3e67871de15bf60300a6d859ef1" vs "be566a0608005c83eb93fb84a6d27bb1"
+2026/02/08 03:00:13 INFO  : modbus_data_20260208.csv: Removing failed copy
+2026/02/08 03:00:15 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/08 03:00:15 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/08 03:00:15 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "b021e3e67871de15bf60300a6d859ef1" vs "be566a0608005c83eb93fb84a6d27bb1"
+2026/02/08 03:00:15 INFO  : 
+Transferred:   	    3.431 MiB / 3.431 MiB, 100%, 319.350 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               189 / 189, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        13.4s
+
+2026/02/08 03:00:15 Failed to sync: corrupted on transfer: md5 hash differ "b021e3e67871de15bf60300a6d859ef1" vs "be566a0608005c83eb93fb84a6d27bb1"
+2026/02/09 03:00:05 ERROR : modbus_data_20260209.csv: corrupted on transfer: md5 hash differ "bb85c05d4f44d16c56d451dfaf9b5434" vs "ca383f44fb1878c057f8e1ceba64f1c0"
+2026/02/09 03:00:05 INFO  : modbus_data_20260209.csv: Removing failed copy
+2026/02/09 03:00:06 INFO  : modbus_data_20260208.csv: Copied (new)
+2026/02/09 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/09 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/09 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "bb85c05d4f44d16c56d451dfaf9b5434" vs "ca383f44fb1878c057f8e1ceba64f1c0"
+2026/02/09 03:00:09 INFO  : modbus_data_20260209.csv: Copied (new)
+2026/02/09 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/02/09 03:00:09 INFO  : 
+Transferred:   	    3.260 MiB / 3.260 MiB, 100%, 667.604 KiB/s, ETA 0s
+Checks:               127 / 127, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.3s
+
+2026/02/10 03:00:06 INFO  : modbus_data_20260210.csv: Copied (new)
+2026/02/10 03:00:06 INFO  : modbus_data_20260209.csv: Copied (replaced existing)
+2026/02/10 03:00:06 INFO  : 
+Transferred:   	    2.956 MiB / 2.956 MiB, 100%, 1.478 MiB/s, ETA 0s
+Checks:                65 / 65, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.6s
+
+2026/02/11 03:00:04 ERROR : modbus_data_20260211.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 319947 to 320088)
+2026/02/11 03:00:07 INFO  : modbus_data_20260210.csv: Copied (replaced existing)
+2026/02/11 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/11 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/11 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 319947 to 320088)
+2026/02/11 03:00:10 ERROR : modbus_data_20260211.csv: corrupted on transfer: md5 hash differ "224f6ebc0093667d47634aba7f6b27a6" vs "eea1858d784393bc2a5a41dafa1a916f"
+2026/02/11 03:00:10 INFO  : modbus_data_20260211.csv: Removing failed copy
+2026/02/11 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/11 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/11 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "224f6ebc0093667d47634aba7f6b27a6" vs "eea1858d784393bc2a5a41dafa1a916f"
+2026/02/11 03:00:13 INFO  : modbus_data_20260211.csv: Copied (new)
+2026/02/11 03:00:13 ERROR : Attempt 3/3 succeeded
+2026/02/11 03:00:13 INFO  : 
+Transferred:   	    3.336 MiB / 3.336 MiB, 100%, 427.049 KiB/s, ETA 0s
+Checks:               198 / 198, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.0s
+
+2026/02/12 03:00:07 ERROR : modbus_data_20260212.csv: corrupted on transfer: md5 hash differ "d32167845f93a10744e7d0ea9709a497" vs "29ff3f097429bd222463d17e5c0c509a"
+2026/02/12 03:00:07 INFO  : modbus_data_20260212.csv: Removing failed copy
+2026/02/12 03:00:08 INFO  : modbus_data_20260211.csv: Copied (replaced existing)
+2026/02/12 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/12 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/12 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "d32167845f93a10744e7d0ea9709a497" vs "29ff3f097429bd222463d17e5c0c509a"
+2026/02/12 03:00:11 ERROR : modbus_data_20260212.csv: corrupted on transfer: md5 hash differ "da938ed7c9393d96fc15f586e6142198" vs "d32167845f93a10744e7d0ea9709a497"
+2026/02/12 03:00:11 INFO  : modbus_data_20260212.csv: Removing failed copy
+2026/02/12 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/12 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/12 03:00:12 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "da938ed7c9393d96fc15f586e6142198" vs "d32167845f93a10744e7d0ea9709a497"
+2026/02/12 03:00:47 ERROR : modbus_data_20260212.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 324142 to 325129)
+2026/02/12 03:00:47 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/12 03:00:47 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/12 03:00:47 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 324142 to 325129)
+2026/02/12 03:00:47 INFO  : 
+Transferred:   	    3.553 MiB / 3.553 MiB, 100%, 42.469 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               201 / 201, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        44.7s
+
+2026/02/12 03:00:47 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 324142 to 325129)
+2026/02/13 03:00:03 ERROR : modbus_data_20260213.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323571 to 323712)
+2026/02/13 03:00:06 INFO  : modbus_data_20260212.csv: Copied (new)
+2026/02/13 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/13 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/13 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323571 to 323712)
+2026/02/13 03:00:09 ERROR : modbus_data_20260213.csv: corrupted on transfer: md5 hash differ "ada1cc54dac59fd6e7190ca7220015a2" vs "eee700af9567fd7cf84549f3f0151dd5"
+2026/02/13 03:00:09 INFO  : modbus_data_20260213.csv: Removing failed copy
+2026/02/13 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/13 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/13 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "ada1cc54dac59fd6e7190ca7220015a2" vs "eee700af9567fd7cf84549f3f0151dd5"
+2026/02/13 03:00:12 INFO  : modbus_data_20260213.csv: Copied (new)
+2026/02/13 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/02/13 03:00:12 INFO  : 
+Transferred:   	    3.266 MiB / 3.266 MiB, 100%, 371.586 KiB/s, ETA 0s
+Checks:               203 / 203, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.1s
+
+2026/02/14 03:00:06 ERROR : modbus_data_20260214.csv: corrupted on transfer: md5 hash differ "d787538f77c9c85bcffa3d9f44fcd14f" vs "27e2537c657475e51d2d0de43e12f465"
+2026/02/14 03:00:06 INFO  : modbus_data_20260214.csv: Removing failed copy
+2026/02/14 03:00:06 INFO  : modbus_data_20260213.csv: Copied (replaced existing)
+2026/02/14 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/14 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/14 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "d787538f77c9c85bcffa3d9f44fcd14f" vs "27e2537c657475e51d2d0de43e12f465"
+2026/02/14 03:00:09 INFO  : modbus_data_20260214.csv: Copied (new)
+2026/02/14 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/02/14 03:00:09 INFO  : 
+Transferred:   	    3.377 MiB / 3.377 MiB, 100%, 576.354 KiB/s, ETA 0s
+Checks:               138 / 138, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.1s
+
+2026/02/15 03:00:06 INFO  : modbus_data_20260215.csv: Copied (new)
+2026/02/15 03:00:07 INFO  : modbus_data_20260214.csv: Copied (replaced existing)
+2026/02/15 03:00:07 INFO  : 
+Transferred:   	    3.219 MiB / 3.219 MiB, 100%, 1.073 MiB/s, ETA 0s
+Checks:                70 / 70, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.0s
+
+2026/02/16 03:00:03 ERROR : modbus_data_20260216.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321709 to 321849)
+2026/02/16 03:00:06 INFO  : modbus_data_20260215.csv: Copied (replaced existing)
+2026/02/16 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/16 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/16 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321709 to 321849)
+2026/02/16 03:00:09 ERROR : modbus_data_20260216.csv: corrupted on transfer: md5 hash differ "f31190771153a2b6bd9e806612ccdea7" vs "b091c729294dc8eeca1cf1d58d365862"
+2026/02/16 03:00:09 INFO  : modbus_data_20260216.csv: Removing failed copy
+2026/02/16 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/16 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/16 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "f31190771153a2b6bd9e806612ccdea7" vs "b091c729294dc8eeca1cf1d58d365862"
+2026/02/16 03:00:12 INFO  : modbus_data_20260216.csv: Copied (new)
+2026/02/16 03:00:12 ERROR : Attempt 3/3 succeeded
+2026/02/16 03:00:12 INFO  : 
+Transferred:   	    3.570 MiB / 3.570 MiB, 100%, 406.154 KiB/s, ETA 0s
+Checks:               213 / 213, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        11.2s
+
+2026/02/17 03:00:05 ERROR : modbus_data_20260217.csv: corrupted on transfer: md5 hash differ "04f39e725b58e92916ec315c68c4c57c" vs "51d1d51ec2ed412758886354dd217f3e"
+2026/02/17 03:00:05 INFO  : modbus_data_20260217.csv: Removing failed copy
+2026/02/17 03:00:06 INFO  : modbus_data_20260216.csv: Copied (replaced existing)
+2026/02/17 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/17 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/17 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "04f39e725b58e92916ec315c68c4c57c" vs "51d1d51ec2ed412758886354dd217f3e"
+2026/02/17 03:00:09 INFO  : modbus_data_20260217.csv: Copied (new)
+2026/02/17 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/02/17 03:00:09 INFO  : 
+Transferred:   	    3.261 MiB / 3.261 MiB, 100%, 556.521 KiB/s, ETA 0s
+Checks:               144 / 144, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.1s
+
+2026/02/18 03:00:06 INFO  : modbus_data_20260218.csv: Copied (new)
+2026/02/18 03:00:06 INFO  : modbus_data_20260217.csv: Copied (replaced existing)
+2026/02/18 03:00:06 INFO  : 
+Transferred:   	    2.957 MiB / 2.957 MiB, 100%, 1009.828 KiB/s, ETA 0s
+Checks:                73 / 73, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.8s
+
+2026/02/19 03:00:06 ERROR : modbus_data_20260219.csv: corrupted on transfer: md5 hash differ "f0d9967887937170e4103aba02f1d065" vs "16c0fecf25c4a0792b663a493fbf4ed5"
+2026/02/19 03:00:06 INFO  : modbus_data_20260219.csv: Removing failed copy
+2026/02/19 03:00:06 INFO  : modbus_data_20260218.csv: Copied (replaced existing)
+2026/02/19 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/19 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/19 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "f0d9967887937170e4103aba02f1d065" vs "16c0fecf25c4a0792b663a493fbf4ed5"
+2026/02/19 03:00:09 ERROR : modbus_data_20260219.csv: corrupted on transfer: md5 hash differ "1a52691b83f75c2ec655785569dc75a8" vs "f0d9967887937170e4103aba02f1d065"
+2026/02/19 03:00:09 INFO  : modbus_data_20260219.csv: Removing failed copy
+2026/02/19 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/19 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/19 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "1a52691b83f75c2ec655785569dc75a8" vs "f0d9967887937170e4103aba02f1d065"
+2026/02/19 03:00:20 ERROR : modbus_data_20260219.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323894 to 324176)
+2026/02/19 03:00:20 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/19 03:00:20 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/19 03:00:20 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323894 to 324176)
+2026/02/19 03:00:20 INFO  : 
+Transferred:   	    3.574 MiB / 3.574 MiB, 100%, 228.762 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               222 / 222, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        18.4s
+
+2026/02/19 03:00:20 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323894 to 324176)
+2026/02/20 03:00:06 INFO  : modbus_data_20260220.csv: Copied (new)
+2026/02/20 03:00:07 INFO  : modbus_data_20260219.csv: Copied (new)
+2026/02/20 03:00:07 INFO  : 
+Transferred:   	    2.955 MiB / 2.955 MiB, 100%, 1.478 MiB/s, ETA 0s
+Checks:                74 / 74, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.7s
+
+2026/02/21 03:00:06 INFO  : modbus_data_20260221.csv: Copied (new)
+2026/02/21 03:00:07 INFO  : modbus_data_20260220.csv: Copied (replaced existing)
+2026/02/21 03:00:07 INFO  : 
+Transferred:   	    2.952 MiB / 2.952 MiB, 100%, 1007.783 KiB/s, ETA 0s
+Checks:                76 / 76, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.9s
+
+2026/02/22 03:00:05 ERROR : modbus_data_20260222.csv: corrupted on transfer: md5 hash differ "45a931b1ac1db506d3c4aaf206159cf9" vs "e2e31367d02ca52ca9be307449744287"
+2026/02/22 03:00:05 INFO  : modbus_data_20260222.csv: Removing failed copy
+2026/02/22 03:00:06 INFO  : modbus_data_20260221.csv: Copied (replaced existing)
+2026/02/22 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/22 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/22 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "45a931b1ac1db506d3c4aaf206159cf9" vs "e2e31367d02ca52ca9be307449744287"
+2026/02/22 03:00:09 INFO  : modbus_data_20260222.csv: Copied (new)
+2026/02/22 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/02/22 03:00:09 INFO  : 
+Transferred:   	    3.265 MiB / 3.265 MiB, 100%, 668.709 KiB/s, ETA 0s
+Checks:               154 / 154, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.4s
+
+2026/02/23 03:00:06 INFO  : modbus_data_20260223.csv: Copied (new)
+2026/02/23 03:00:06 INFO  : modbus_data_20260222.csv: Copied (replaced existing)
+2026/02/23 03:00:06 INFO  : 
+Transferred:   	    2.957 MiB / 2.957 MiB, 100%, 1.478 MiB/s, ETA 0s
+Checks:                78 / 78, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.7s
+
+2026/02/24 03:00:04 ERROR : modbus_data_20260224.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323077 to 323218)
+2026/02/24 03:00:07 INFO  : modbus_data_20260223.csv: Copied (replaced existing)
+2026/02/24 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/24 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/24 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323077 to 323218)
+2026/02/24 03:00:10 ERROR : modbus_data_20260224.csv: corrupted on transfer: md5 hash differ "8cdc7e86c53f9114eca4ee52c63ecc15" vs "20b53e939d6a84a7273265f14aa1f7b0"
+2026/02/24 03:00:10 INFO  : modbus_data_20260224.csv: Removing failed copy
+2026/02/24 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/24 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/24 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "8cdc7e86c53f9114eca4ee52c63ecc15" vs "20b53e939d6a84a7273265f14aa1f7b0"
+2026/02/24 03:00:29 ERROR : modbus_data_20260224.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323359 to 323923)
+2026/02/24 03:00:29 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/24 03:00:29 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/24 03:00:29 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323359 to 323923)
+2026/02/24 03:00:29 INFO  : 
+Transferred:   	    2.964 MiB / 2.964 MiB, 100%, 106.119 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               237 / 237, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        27.1s
+
+2026/02/24 03:00:29 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323359 to 323923)
+2026/02/25 03:00:05 INFO  : modbus_data_20260225.csv: Copied (new)
+2026/02/25 03:00:06 INFO  : modbus_data_20260224.csv: Copied (new)
+2026/02/25 03:00:06 INFO  : 
+Transferred:   	    2.976 MiB / 2.976 MiB, 100%, 1015.929 KiB/s, ETA 0s
+Checks:                79 / 79, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.9s
+
+2026/02/26 03:00:07 INFO  : modbus_data_20260225.csv: Copied (replaced existing)
+2026/02/26 03:00:07 INFO  : modbus_data_20260226.csv: Copied (new)
+2026/02/26 03:00:07 INFO  : 
+Transferred:   	    2.985 MiB / 2.985 MiB, 100%, 1018.786 KiB/s, ETA 0s
+Checks:                81 / 81, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.4s
+
+2026/02/27 03:00:06 ERROR : modbus_data_20260227.csv: corrupted on transfer: md5 hash differ "efea397c1c0a71199fb1f1ac9c5dc312" vs "9b3884e1c7ad6afa6f4690b1655ff2d2"
+2026/02/27 03:00:06 INFO  : modbus_data_20260227.csv: Removing failed copy
+2026/02/27 03:00:08 INFO  : modbus_data_20260226.csv: Copied (replaced existing)
+2026/02/27 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/27 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/27 03:00:08 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "efea397c1c0a71199fb1f1ac9c5dc312" vs "9b3884e1c7ad6afa6f4690b1655ff2d2"
+2026/02/27 03:00:11 ERROR : modbus_data_20260227.csv: corrupted on transfer: md5 hash differ "784378a433cda201c961145773e74908" vs "efea397c1c0a71199fb1f1ac9c5dc312"
+2026/02/27 03:00:11 INFO  : modbus_data_20260227.csv: Removing failed copy
+2026/02/27 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/27 03:00:12 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/27 03:00:12 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "784378a433cda201c961145773e74908" vs "efea397c1c0a71199fb1f1ac9c5dc312"
+2026/02/27 03:00:45 ERROR : modbus_data_20260227.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321487 to 322467)
+2026/02/27 03:00:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/02/27 03:00:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/02/27 03:00:45 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321487 to 322467)
+2026/02/27 03:00:45 INFO  : 
+Transferred:   	    3.255 MiB / 3.255 MiB, 100%, 41.501 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               246 / 246, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        43.8s
+
+2026/02/27 03:00:45 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321487 to 322467)
+2026/02/28 03:00:05 INFO  : modbus_data_20260228.csv: Copied (new)
+2026/02/28 03:00:06 INFO  : modbus_data_20260227.csv: Copied (new)
+2026/02/28 03:00:06 INFO  : 
+Transferred:   	    2.938 MiB / 2.938 MiB, 100%, 1002.902 KiB/s, ETA 0s
+Checks:                82 / 82, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.3s
+
+2026/03/01 03:00:03 ERROR : modbus_data_20260301.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321177 to 321317)
+2026/03/01 03:00:06 INFO  : modbus_data_20260228.csv: Copied (replaced existing)
+2026/03/01 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/01 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/01 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321177 to 321317)
+2026/03/01 03:00:09 ERROR : modbus_data_20260301.csv: corrupted on transfer: md5 hash differ "02c1dbd09476a445057ba83f871e1ece" vs "8779c210e128ca8bdd597ff646ca6337"
+2026/03/01 03:00:09 INFO  : modbus_data_20260301.csv: Removing failed copy
+2026/03/01 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/01 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/01 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "02c1dbd09476a445057ba83f871e1ece" vs "8779c210e128ca8bdd597ff646ca6337"
+2026/03/01 03:00:46 ERROR : modbus_data_20260301.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321457 to 322437)
+2026/03/01 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/01 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/01 03:00:46 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321457 to 322437)
+2026/03/01 03:00:46 INFO  : 
+Transferred:   	    3.245 MiB / 3.245 MiB, 100%, 38.778 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               252 / 252, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        44.6s
+
+2026/03/01 03:00:46 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321457 to 322437)
+2026/03/02 03:00:06 ERROR : modbus_data_20260302.csv: corrupted on transfer: md5 hash differ "4c13e7b395d5cfbe07b2609792250cc7" vs "a731a36573d4aada8e83a785cb7767f5"
+2026/03/02 03:00:06 INFO  : modbus_data_20260302.csv: Removing failed copy
+2026/03/02 03:00:07 INFO  : modbus_data_20260301.csv: Copied (new)
+2026/03/02 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/02 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/02 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "4c13e7b395d5cfbe07b2609792250cc7" vs "a731a36573d4aada8e83a785cb7767f5"
+2026/03/02 03:00:11 ERROR : modbus_data_20260302.csv: corrupted on transfer: md5 hash differ "8cfd0d45efe8a68b748a637379379e51" vs "4c13e7b395d5cfbe07b2609792250cc7"
+2026/03/02 03:00:11 INFO  : modbus_data_20260302.csv: Removing failed copy
+2026/03/02 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/02 03:00:11 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/02 03:00:11 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "8cfd0d45efe8a68b748a637379379e51" vs "4c13e7b395d5cfbe07b2609792250cc7"
+2026/03/02 03:00:16 ERROR : modbus_data_20260302.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321844 to 321984)
+2026/03/02 03:00:16 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/02 03:00:16 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/02 03:00:16 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321844 to 321984)
+2026/03/02 03:00:16 INFO  : 
+Transferred:   	    3.245 MiB / 3.245 MiB, 100%, 255.638 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               254 / 254, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        14.9s
+
+2026/03/02 03:00:16 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321844 to 321984)
+2026/03/03 03:00:06 INFO  : modbus_data_20260303.csv: Copied (new)
+2026/03/03 03:00:07 INFO  : modbus_data_20260302.csv: Copied (new)
+2026/03/03 03:00:07 INFO  : 
+Transferred:   	    2.952 MiB / 2.952 MiB, 100%, 1007.533 KiB/s, ETA 0s
+Checks:                85 / 85, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.3s
+
+2026/03/04 03:00:05 ERROR : modbus_data_20260304.csv: corrupted on transfer: md5 hash differ "2511d237c0be1e3adc5d9f13fa103fa4" vs "377d51274f12e3c7e057755d5a8d485e"
+2026/03/04 03:00:05 INFO  : modbus_data_20260304.csv: Removing failed copy
+2026/03/04 03:00:06 INFO  : modbus_data_20260303.csv: Copied (replaced existing)
+2026/03/04 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/04 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/04 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "2511d237c0be1e3adc5d9f13fa103fa4" vs "377d51274f12e3c7e057755d5a8d485e"
+2026/03/04 03:00:09 ERROR : modbus_data_20260304.csv: corrupted on transfer: md5 hash differ "24a78714956b6ba65e497ed24e3b2a92" vs "2511d237c0be1e3adc5d9f13fa103fa4"
+2026/03/04 03:00:09 INFO  : modbus_data_20260304.csv: Removing failed copy
+2026/03/04 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/04 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/04 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "24a78714956b6ba65e497ed24e3b2a92" vs "2511d237c0be1e3adc5d9f13fa103fa4"
+2026/03/04 03:00:45 ERROR : modbus_data_20260304.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321544 to 322524)
+2026/03/04 03:00:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/04 03:00:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/04 03:00:45 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321544 to 322524)
+2026/03/04 03:00:45 INFO  : 
+Transferred:   	    3.308 MiB / 3.308 MiB, 100%, 42.173 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               261 / 261, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        43.5s
+
+2026/03/04 03:00:45 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321544 to 322524)
+2026/03/05 03:00:05 INFO  : modbus_data_20260305.csv: Copied (new)
+2026/03/05 03:00:08 INFO  : modbus_data_20260304.csv: Copied (new)
+2026/03/05 03:00:08 INFO  : 
+Transferred:   	    2.977 MiB / 2.977 MiB, 100%, 762.198 KiB/s, ETA 0s
+Checks:                87 / 87, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         6.4s
+
+2026/03/06 03:00:03 ERROR : modbus_data_20260306.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321971 to 322111)
+2026/03/06 03:00:07 INFO  : modbus_data_20260305.csv: Copied (replaced existing)
+2026/03/06 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/06 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/06 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 321971 to 322111)
+2026/03/06 03:00:08 ERROR : modbus_data_20260306.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 322111 to 322251)
+2026/03/06 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/06 03:00:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/06 03:00:08 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 322111 to 322251)
+2026/03/06 03:00:10 INFO  : modbus_data_20260306.csv: Copied (new)
+2026/03/06 03:00:10 ERROR : Attempt 3/3 succeeded
+2026/03/06 03:00:10 INFO  : 
+Transferred:   	    3.215 MiB / 3.215 MiB, 100%, 470.358 KiB/s, ETA 0s
+Checks:               267 / 267, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         9.0s
+
+2026/03/07 03:00:06 ERROR : modbus_data_20260307.csv: corrupted on transfer: md5 hash differ "e6d49cec9e002e4463c9852e5ad5388f" vs "c82a019e1294708958c9cf393eb8d59a"
+2026/03/07 03:00:06 INFO  : modbus_data_20260307.csv: Removing failed copy
+2026/03/07 03:00:06 INFO  : modbus_data_20260306.csv: Copied (replaced existing)
+2026/03/07 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/07 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/07 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "e6d49cec9e002e4463c9852e5ad5388f" vs "c82a019e1294708958c9cf393eb8d59a"
+2026/03/07 03:00:09 INFO  : modbus_data_20260307.csv: Copied (new)
+2026/03/07 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/03/07 03:00:09 INFO  : 
+Transferred:   	    3.281 MiB / 3.281 MiB, 100%, 559.960 KiB/s, ETA 0s
+Checks:               180 / 180, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         8.2s
+
+2026/03/08 03:00:06 INFO  : modbus_data_20260308.csv: Copied (new)
+2026/03/08 03:00:06 INFO  : modbus_data_20260307.csv: Copied (replaced existing)
+2026/03/08 03:00:06 INFO  : 
+Transferred:   	    2.957 MiB / 2.957 MiB, 100%, 1009.236 KiB/s, ETA 0s
+Checks:                91 / 91, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.0s
+
+2026/03/09 03:00:05 ERROR : modbus_data_20260309.csv: corrupted on transfer: md5 hash differ "9fc51104f672380156e149f7e8938893" vs "c85e2093c4ba307a7d9e1e2714cfaafb"
+2026/03/09 03:00:05 INFO  : modbus_data_20260309.csv: Removing failed copy
+2026/03/09 03:00:07 INFO  : modbus_data_20260308.csv: Copied (replaced existing)
+2026/03/09 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/09 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/09 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "9fc51104f672380156e149f7e8938893" vs "c85e2093c4ba307a7d9e1e2714cfaafb"
+2026/03/09 03:00:09 ERROR : modbus_data_20260309.csv: corrupted on transfer: md5 hash differ "fa33ff472ce03d82198f34e06e1c5219" vs "9fc51104f672380156e149f7e8938893"
+2026/03/09 03:00:09 INFO  : modbus_data_20260309.csv: Removing failed copy
+2026/03/09 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/09 03:00:10 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/09 03:00:10 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "fa33ff472ce03d82198f34e06e1c5219" vs "9fc51104f672380156e149f7e8938893"
+2026/03/09 03:00:46 ERROR : modbus_data_20260309.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323887 to 324874)
+2026/03/09 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/09 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/09 03:00:46 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323887 to 324874)
+2026/03/09 03:00:46 INFO  : 
+Transferred:   	    3.574 MiB / 3.574 MiB, 100%, 40.048 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               276 / 276, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        44.8s
+
+2026/03/09 03:00:46 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 323887 to 324874)
+2026/03/10 03:00:05 ERROR : modbus_data_20260310.csv: corrupted on transfer: md5 hash differ "6c7561494af9cf47df4a76392fdb2d41" vs "cde70842d073f24521feb99dbca98b61"
+2026/03/10 03:00:05 INFO  : modbus_data_20260310.csv: Removing failed copy
+2026/03/10 03:00:06 INFO  : modbus_data_20260309.csv: Copied (new)
+2026/03/10 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/03/10 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/03/10 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "6c7561494af9cf47df4a76392fdb2d41" vs "cde70842d073f24521feb99dbca98b61"
+2026/03/10 03:00:09 INFO  : modbus_data_20260310.csv: Copied (new)
+2026/03/10 03:00:09 ERROR : Attempt 2/3 succeeded
+2026/03/10 03:00:09 INFO  : 
+Transferred:   	    3.273 MiB / 3.273 MiB, 100%, 670.245 KiB/s, ETA 0s
+Checks:               185 / 185, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         7.4s
+
+2026/03/11 03:00:06 INFO  : modbus_data_20260311.csv: Copied (new)
+2026/03/11 03:00:07 INFO  : modbus_data_20260310.csv: Copied (replaced existing)
+2026/03/11 03:00:07 INFO  : 
+Transferred:   	    3.019 MiB / 3.019 MiB, 100%, 1.510 MiB/s, ETA 0s
+Checks:                94 / 94, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         4.7s
+
+2026/03/12 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:53866->[::1]:53: read: connection refused
+2026/03/13 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:59186->[::1]:53: read: connection refused
+2026/03/14 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:33203->[::1]:53: read: connection refused
+2026/03/15 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:46781->[::1]:53: read: connection refused
+2026/03/16 03:01:40 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:45148->[::1]:53: read: connection refused
+2026/03/17 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:41918->[::1]:53: read: connection refused
+2026/03/18 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:48606->[::1]:53: read: connection refused
+2026/03/19 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:48317->[::1]:53: read: connection refused
+2026/03/20 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:39985->[::1]:53: read: connection refused
+2026/03/21 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:51440->[::1]:53: read: connection refused
+2026/03/22 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:39127->[::1]:53: read: connection refused
+2026/03/23 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:57802->[::1]:53: read: connection refused
+2026/03/24 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:53773->[::1]:53: read: connection refused
+2026/03/25 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:36465->[::1]:53: read: connection refused
+2026/03/26 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:57765->[::1]:53: read: connection refused
+2026/03/27 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:59559->[::1]:53: read: connection refused
+2026/03/28 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:41629->[::1]:53: read: connection refused
+2026/03/29 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:33272->[::1]:53: read: connection refused
+2026/03/30 03:01:40 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:57120->[::1]:53: read: connection refused
+2026/03/31 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:57370->[::1]:53: read: connection refused
+2026/04/01 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:40363->[::1]:53: read: connection refused
+2026/04/02 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:37130->[::1]:53: read: connection refused
+2026/04/03 03:01:40 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:50884->[::1]:53: read: connection refused
+2026/04/04 03:01:40 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:39475->[::1]:53: read: connection refused
+2026/04/05 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:46256->[::1]:53: read: connection refused
+2026/04/06 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:47130->[::1]:53: read: connection refused
+2026/04/07 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:55161->[::1]:53: read: connection refused
+2026/04/08 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:54332->[::1]:53: read: connection refused
+2026/04/09 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:56223->[::1]:53: read: connection refused
+2026/04/10 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:38375->[::1]:53: read: connection refused
+2026/04/11 03:01:41 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:57544->[::1]:53: read: connection refused
+2026/04/12 03:01:42 Failed to create file system for "gdrive:AIDT_PQ_ModbusReader/csv": couldn't find root directory ID: Get "https://www.googleapis.com/drive/v3/files/root?alt=json&fields=id&prettyPrint=false&supportsAllDrives=true": couldn't fetch token - maybe it has expired? - refresh with "rclone config reconnect gdrive:": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com on [::1]:53: read udp [::1]:44704->[::1]:53: read: connection refused
+2026/04/13 03:00:31 INFO  : modbus_data_20260313.csv: Copied (new)
+2026/04/13 03:00:32 INFO  : modbus_data_20260315.csv: Copied (new)
+2026/04/13 03:00:33 INFO  : modbus_data_20260312.csv: Copied (new)
+2026/04/13 03:00:33 INFO  : modbus_data_20260314.csv: Copied (new)
+2026/04/13 03:00:34 INFO  : modbus_data_20260316.csv: Copied (new)
+2026/04/13 03:00:37 INFO  : modbus_data_20260317.csv: Copied (new)
+2026/04/13 03:00:37 INFO  : modbus_data_20260319.csv: Copied (new)
+2026/04/13 03:00:37 INFO  : modbus_data_20260318.csv: Copied (new)
+2026/04/13 03:00:38 INFO  : modbus_data_20260320.csv: Copied (new)
+2026/04/13 03:00:39 INFO  : modbus_data_20260321.csv: Copied (new)
+2026/04/13 03:00:40 INFO  : modbus_data_20260322.csv: Copied (new)
+2026/04/13 03:00:41 INFO  : modbus_data_20260323.csv: Copied (new)
+2026/04/13 03:00:42 INFO  : modbus_data_20260324.csv: Copied (new)
+2026/04/13 03:00:44 INFO  : modbus_data_20260326.csv: Copied (new)
+2026/04/13 03:00:45 INFO  : modbus_data_20260325.csv: Copied (new)
+2026/04/13 03:00:47 INFO  : modbus_data_20260328.csv: Copied (new)
+2026/04/13 03:00:47 INFO  : modbus_data_20260327.csv: Copied (new)
+2026/04/13 03:00:48 INFO  : modbus_data_20260329.csv: Copied (new)
+2026/04/13 03:00:49 INFO  : modbus_data_20260330.csv: Copied (new)
+2026/04/13 03:00:50 INFO  : modbus_data_20260331.csv: Copied (new)
+2026/04/13 03:00:50 INFO  : modbus_data_20260401.csv: Copied (new)
+2026/04/13 03:00:51 INFO  : modbus_data_20260402.csv: Copied (new)
+2026/04/13 03:00:52 INFO  : modbus_data_20260403.csv: Copied (new)
+2026/04/13 03:00:53 INFO  : modbus_data_20260404.csv: Copied (new)
+2026/04/13 03:00:53 INFO  : modbus_data_20260405.csv: Copied (new)
+2026/04/13 03:00:54 INFO  : modbus_data_20260406.csv: Copied (new)
+2026/04/13 03:00:56 INFO  : modbus_data_20260407.csv: Copied (new)
+2026/04/13 03:00:58 INFO  : modbus_data_20260408.csv: Copied (new)
+2026/04/13 03:00:58 INFO  : modbus_data_20260409.csv: Copied (new)
+2026/04/13 03:00:59 ERROR : modbus_data_20260413.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313291 to 314842)
+2026/04/13 03:00:59 INFO  : modbus_data_20260410.csv: Copied (new)
+2026/04/13 03:00:59 INFO  : modbus_data_20260411.csv: Copied (new)
+2026/04/13 03:01:00 INFO  : modbus_data_20260412.csv: Copied (new)
+2026/04/13 03:01:02 INFO  : modbus_data_20260311.csv: Copied (replaced existing)
+2026/04/13 03:01:02 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/13 03:01:02 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/13 03:01:02 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313291 to 314842)
+2026/04/13 03:01:03 ERROR : modbus_data_20260413.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314842 to 314983)
+2026/04/13 03:01:03 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/13 03:01:03 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/13 03:01:03 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314842 to 314983)
+2026/04/13 03:01:08 ERROR : modbus_data_20260413.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314983 to 315124)
+2026/04/13 03:01:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/13 03:01:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/13 03:01:08 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314983 to 315124)
+2026/04/13 03:01:08 INFO  : 
+Transferred:   	  100.186 MiB / 100.186 MiB, 100%, 1.430 MiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               349 / 349, 100%
+Transferred:           33 / 33, 100%
+Elapsed time:       1m5.3s
+
+2026/04/13 03:01:08 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314983 to 315124)
+2026/04/14 03:00:05 ERROR : modbus_data_20260414.csv: corrupted on transfer: md5 hash differ "763559ffcbef1e10f2842787665b7422" vs "9ce10824e108b8407193122d14424d5f"
+2026/04/14 03:00:05 INFO  : modbus_data_20260414.csv: Removing failed copy
+2026/04/14 03:00:06 INFO  : modbus_data_20260413.csv: Copied (new)
+2026/04/14 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/14 03:00:06 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/14 03:00:06 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "763559ffcbef1e10f2842787665b7422" vs "9ce10824e108b8407193122d14424d5f"
+2026/04/14 03:00:42 ERROR : modbus_data_20260414.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313285 to 314272)
+2026/04/14 03:00:42 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/14 03:00:42 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/14 03:00:42 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313285 to 314272)
+2026/04/14 03:00:45 ERROR : modbus_data_20260414.csv: corrupted on transfer: md5 hash differ "9c2c4fc008706aca0a4e41020d359444" vs "adf0bd8c4efdddd1d8379288fc96e53b"
+2026/04/14 03:00:45 INFO  : modbus_data_20260414.csv: Removing failed copy
+2026/04/14 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/14 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/14 03:00:46 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "9c2c4fc008706aca0a4e41020d359444" vs "adf0bd8c4efdddd1d8379288fc96e53b"
+2026/04/14 03:00:46 INFO  : 
+Transferred:   	    3.257 MiB / 3.257 MiB, 100%, 49.998 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               383 / 383, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        44.9s
+
+2026/04/14 03:00:46 Failed to sync: corrupted on transfer: md5 hash differ "9c2c4fc008706aca0a4e41020d359444" vs "adf0bd8c4efdddd1d8379288fc96e53b"
+2026/04/15 03:00:06 INFO  : modbus_data_20260415.csv: Copied (new)
+2026/04/15 03:00:49 INFO  : modbus_data_20260414.csv: Copied (new)
+2026/04/15 03:00:49 INFO  : 
+Transferred:   	   11.017 MiB / 11.017 MiB, 100%, 358.280 KiB/s, ETA 0s
+Checks:               128 / 128, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        46.8s
+
+2026/04/16 03:00:04 ERROR : modbus_data_20260416.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313131 to 313272)
+2026/04/16 03:00:26 INFO  : modbus_data_20260415.csv: Copied (replaced existing)
+2026/04/16 03:00:26 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/16 03:00:26 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/16 03:00:26 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313131 to 313272)
+2026/04/16 03:00:40 ERROR : modbus_data_20260416.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313836 to 314259)
+2026/04/16 03:00:40 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/16 03:00:40 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/16 03:00:40 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313836 to 314259)
+2026/04/16 03:00:44 ERROR : modbus_data_20260416.csv: corrupted on transfer: md5 hash differ "6946d724488f238f53e1010b83949d44" vs "8d63ab58ba1a33abeef776b5975b0905"
+2026/04/16 03:00:44 INFO  : modbus_data_20260416.csv: Removing failed copy
+2026/04/16 03:00:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/16 03:00:45 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/16 03:00:45 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "6946d724488f238f53e1010b83949d44" vs "8d63ab58ba1a33abeef776b5975b0905"
+2026/04/16 03:00:45 INFO  : 
+Transferred:   	   16.522 MiB / 16.522 MiB, 100%, 232.771 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               390 / 390, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        43.0s
+
+2026/04/16 03:00:45 Failed to sync: corrupted on transfer: md5 hash differ "6946d724488f238f53e1010b83949d44" vs "8d63ab58ba1a33abeef776b5975b0905"
+2026/04/17 03:00:06 ERROR : modbus_data_20260417.csv: corrupted on transfer: md5 hash differ "0fddd5da422ba67be7269fc41f5a6691" vs "02fbdde259e10f60519074563ed131fe"
+2026/04/17 03:00:06 INFO  : modbus_data_20260417.csv: Removing failed copy
+2026/04/17 03:00:06 INFO  : modbus_data_20260416.csv: Copied (new)
+2026/04/17 03:00:26 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/17 03:00:26 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/17 03:00:26 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "0fddd5da422ba67be7269fc41f5a6691" vs "02fbdde259e10f60519074563ed131fe"
+2026/04/17 03:00:43 ERROR : modbus_data_20260417.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314008 to 314431)
+2026/04/17 03:00:43 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/17 03:00:43 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/17 03:00:43 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314008 to 314431)
+2026/04/17 03:00:46 ERROR : modbus_data_20260417.csv: corrupted on transfer: md5 hash differ "07b694798cd59b1b1698f0353fcca22c" vs "efbb1f9aac9f312ff06fee17a2fcd11f"
+2026/04/17 03:00:46 INFO  : modbus_data_20260417.csv: Removing failed copy
+2026/04/17 03:00:47 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/17 03:00:47 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/17 03:00:47 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "07b694798cd59b1b1698f0353fcca22c" vs "efbb1f9aac9f312ff06fee17a2fcd11f"
+2026/04/17 03:00:47 INFO  : 
+Transferred:   	    3.264 MiB / 3.264 MiB, 100%, 46.945 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               392 / 392, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        45.9s
+
+2026/04/17 03:00:47 Failed to sync: corrupted on transfer: md5 hash differ "07b694798cd59b1b1698f0353fcca22c" vs "efbb1f9aac9f312ff06fee17a2fcd11f"
+2026/04/18 03:00:06 INFO  : modbus_data_20260418.csv: Copied (new)
+2026/04/18 03:00:07 INFO  : modbus_data_20260417.csv: Copied (new)
+2026/04/18 03:00:07 INFO  : 
+Transferred:   	    2.999 MiB / 2.999 MiB, 100%, 1023.639 KiB/s, ETA 0s
+Checks:               131 / 131, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:         5.3s
+
+2026/04/19 03:00:06 ERROR : modbus_data_20260419.csv: corrupted on transfer: md5 hash differ "47eebc335efd054de9ca84c2f0b7b669" vs "49772fe9a691dbb52d39c30f2b37ecb1"
+2026/04/19 03:00:06 INFO  : modbus_data_20260419.csv: Removing failed copy
+2026/04/19 03:00:06 INFO  : modbus_data_20260418.csv: Copied (replaced existing)
+2026/04/19 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/19 03:00:07 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/19 03:00:07 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "47eebc335efd054de9ca84c2f0b7b669" vs "49772fe9a691dbb52d39c30f2b37ecb1"
+2026/04/19 03:00:42 ERROR : modbus_data_20260419.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 311127 to 312107)
+2026/04/19 03:00:42 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/19 03:00:42 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/19 03:00:42 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 311127 to 312107)
+2026/04/19 03:00:46 ERROR : modbus_data_20260419.csv: corrupted on transfer: md5 hash differ "da5a37834ffa736c4406bf4dccb0fbee" vs "189414db704785e09cce7d331d9a5dcb"
+2026/04/19 03:00:46 INFO  : modbus_data_20260419.csv: Removing failed copy
+2026/04/19 03:00:47 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/19 03:00:47 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/19 03:00:47 ERROR : Attempt 3/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "da5a37834ffa736c4406bf4dccb0fbee" vs "189414db704785e09cce7d331d9a5dcb"
+2026/04/19 03:00:47 INFO  : 
+Transferred:   	    3.226 MiB / 3.226 MiB, 100%, 49.552 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               399 / 399, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:        45.6s
+
+2026/04/19 03:00:47 Failed to sync: corrupted on transfer: md5 hash differ "da5a37834ffa736c4406bf4dccb0fbee" vs "189414db704785e09cce7d331d9a5dcb"
+2026/04/20 03:00:06 INFO  : modbus_data_20260420.csv: Copied (new)
+2026/04/20 03:01:01 INFO  : modbus_data_20260419.csv: Copied (new)
+2026/04/20 03:01:01 INFO  : 
+Transferred:   	    5.561 MiB / 5.561 MiB, 100%, 167.480 KiB/s, ETA 0s
+Checks:               133 / 133, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        59.2s
+
+2026/04/21 03:00:03 ERROR : modbus_data_20260421.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 311019 to 311159)
+2026/04/21 03:00:50 INFO  : modbus_data_20260420.csv: Copied (replaced existing)
+2026/04/21 03:00:50 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/21 03:00:50 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/21 03:00:50 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 311019 to 311159)
+2026/04/21 03:00:53 INFO  : modbus_data_20260421.csv: Copied (new)
+2026/04/21 03:00:53 ERROR : Attempt 2/3 succeeded
+2026/04/21 03:00:53 INFO  : 
+Transferred:   	   13.532 MiB / 13.532 MiB, 100%, 195.889 KiB/s, ETA 0s
+Checks:               270 / 270, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        51.8s
+
+2026/04/22 03:00:42 INFO  : modbus_data_20260421.csv: Copied (replaced existing)
+2026/04/22 03:00:53 ERROR : modbus_data_20260422.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313346 to 314756)
+2026/04/22 03:00:53 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/22 03:00:53 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/22 03:00:53 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313346 to 314756)
+2026/04/22 03:00:56 ERROR : modbus_data_20260422.csv: corrupted on transfer: md5 hash differ "08d93c3c6a0647122f4ace75584bfed3" vs "c34237051bb232e7096d9a5d5b9e23af"
+2026/04/22 03:00:56 INFO  : modbus_data_20260422.csv: Removing failed copy
+2026/04/22 03:00:57 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/22 03:00:57 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/22 03:00:57 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "08d93c3c6a0647122f4ace75584bfed3" vs "c34237051bb232e7096d9a5d5b9e23af"
+2026/04/22 03:01:01 ERROR : modbus_data_20260422.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314897 to 315038)
+2026/04/22 03:01:01 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/22 03:01:01 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/22 03:01:01 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314897 to 315038)
+2026/04/22 03:01:01 INFO  : 
+Transferred:   	    8.891 MiB / 8.891 MiB, 100%, 95.073 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               408 / 408, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:       1m0.1s
+
+2026/04/22 03:01:01 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314897 to 315038)
+2026/04/23 03:00:53 ERROR : modbus_data_20260423.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313330 to 314740)
+2026/04/23 03:01:57 INFO  : modbus_data_20260422.csv: Copied (new)
+2026/04/23 03:01:57 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/23 03:01:57 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/23 03:01:57 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313330 to 314740)
+2026/04/23 03:02:00 INFO  : modbus_data_20260423.csv: Copied (new)
+2026/04/23 03:02:00 ERROR : Attempt 2/3 succeeded
+2026/04/23 03:02:00 INFO  : 
+Transferred:   	    5.711 MiB / 5.711 MiB, 100%, 133.040 KiB/s, ETA 0s
+Checks:               273 / 273, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:      1m58.7s
+
+2026/04/24 03:00:04 ERROR : modbus_data_20260424.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313164 to 313305)
+2026/04/24 03:00:41 INFO  : modbus_data_20260423.csv: Copied (replaced existing)
+2026/04/24 03:00:41 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/24 03:00:41 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/24 03:00:41 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313164 to 313305)
+2026/04/24 03:00:45 ERROR : modbus_data_20260424.csv: corrupted on transfer: md5 hash differ "96b1b4ec0aeb4b5386f90cef6d765b7d" vs "7130e74125bfa5545a39dce159f7831e"
+2026/04/24 03:00:45 INFO  : modbus_data_20260424.csv: Removing failed copy
+2026/04/24 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/24 03:00:46 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/24 03:00:46 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "96b1b4ec0aeb4b5386f90cef6d765b7d" vs "7130e74125bfa5545a39dce159f7831e"
+2026/04/24 03:00:49 INFO  : modbus_data_20260424.csv: Copied (new)
+2026/04/24 03:00:49 ERROR : Attempt 3/3 succeeded
+2026/04/24 03:00:49 INFO  : 
+Transferred:   	    5.914 MiB / 5.914 MiB, 100%, 131.629 KiB/s, ETA 0s
+Checks:               414 / 414, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        47.1s
+
+2026/04/25 03:00:54 ERROR : modbus_data_20260425.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 312195 to 312615)
+2026/04/25 03:00:58 INFO  : modbus_data_20260424.csv: Copied (replaced existing)
+2026/04/25 03:00:58 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/25 03:00:58 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/25 03:00:58 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 312195 to 312615)
+2026/04/25 03:01:01 ERROR : modbus_data_20260425.csv: corrupted on transfer: md5 hash differ "2d45dc5617d8184f480da273e4baa2ba" vs "ba1f5299cb49f9c5a067d533a703bc0e"
+2026/04/25 03:01:01 INFO  : modbus_data_20260425.csv: Removing failed copy
+2026/04/25 03:01:37 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/25 03:01:37 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/25 03:01:37 ERROR : Attempt 2/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "2d45dc5617d8184f480da273e4baa2ba" vs "ba1f5299cb49f9c5a067d533a703bc0e"
+2026/04/25 03:01:53 ERROR : modbus_data_20260425.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313875 to 314295)
+2026/04/25 03:01:53 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/25 03:01:53 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/25 03:01:53 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313875 to 314295)
+2026/04/25 03:01:53 INFO  : 
+Transferred:   	    2.989 MiB / 2.989 MiB, 100%, 11.923 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               417 / 417, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:      1m51.3s
+
+2026/04/25 03:01:53 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313875 to 314295)
+2026/04/26 03:00:56 ERROR : modbus_data_20260426.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313067 to 314477)
+2026/04/26 03:01:00 INFO  : modbus_data_20260425.csv: Copied (new)
+2026/04/26 03:01:00 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/26 03:01:00 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/26 03:01:00 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313067 to 314477)
+2026/04/26 03:01:49 ERROR : modbus_data_20260426.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314618 to 316028)
+2026/04/26 03:01:49 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/26 03:01:49 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/26 03:01:49 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314618 to 316028)
+2026/04/26 03:01:52 INFO  : modbus_data_20260426.csv: Copied (new)
+2026/04/26 03:01:52 ERROR : Attempt 3/3 succeeded
+2026/04/26 03:01:52 INFO  : 
+Transferred:   	    3.243 MiB / 3.243 MiB, 100%, 23.253 KiB/s, ETA 0s
+Checks:               419 / 419, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:      1m50.8s
+
+2026/04/27 03:00:06 ERROR : modbus_data_20260427.csv: corrupted on transfer: md5 hash differ "b0dabe21764c3eee16f72fc5f30357ea" vs "e8dcc8c84343d0ea493aee6466bafb12"
+2026/04/27 03:00:06 INFO  : modbus_data_20260427.csv: Removing failed copy
+2026/04/27 03:00:50 INFO  : modbus_data_20260426.csv: Copied (replaced existing)
+2026/04/27 03:00:50 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/27 03:00:50 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/27 03:00:50 ERROR : Attempt 1/3 failed with 1 errors and: corrupted on transfer: md5 hash differ "b0dabe21764c3eee16f72fc5f30357ea" vs "e8dcc8c84343d0ea493aee6466bafb12"
+2026/04/27 03:00:50 ERROR : modbus_data_20260427.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314517 to 314658)
+2026/04/27 03:00:50 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/27 03:00:50 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/27 03:00:50 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314517 to 314658)
+2026/04/27 03:00:53 INFO  : modbus_data_20260427.csv: Copied (new)
+2026/04/27 03:00:53 ERROR : Attempt 3/3 succeeded
+2026/04/27 03:00:53 INFO  : 
+Transferred:   	    8.543 MiB / 8.543 MiB, 100%, 179.496 KiB/s, ETA 0s
+Checks:               423 / 423, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        52.1s
+
+2026/04/28 03:00:49 ERROR : modbus_data_20260428.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313299 to 314568)
+2026/04/28 03:00:52 INFO  : modbus_data_20260427.csv: Copied (replaced existing)
+2026/04/28 03:00:52 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/28 03:00:52 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/28 03:00:52 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313299 to 314568)
+2026/04/28 03:00:55 INFO  : modbus_data_20260428.csv: Copied (new)
+2026/04/28 03:00:55 ERROR : Attempt 2/3 succeeded
+2026/04/28 03:00:55 INFO  : 
+Transferred:   	    8.282 MiB / 8.282 MiB, 100%, 176.896 KiB/s, ETA 0s
+Checks:               284 / 284, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:        53.4s
+
+2026/04/29 03:00:56 ERROR : modbus_data_20260429.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314301 to 314724)
+2026/04/29 03:00:59 INFO  : modbus_data_20260428.csv: Copied (replaced existing)
+2026/04/29 03:00:59 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/29 03:00:59 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/29 03:00:59 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314301 to 314724)
+2026/04/29 03:01:49 ERROR : modbus_data_20260429.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314865 to 316275)
+2026/04/29 03:01:49 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/29 03:01:49 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/29 03:01:49 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314865 to 316275)
+2026/04/29 03:01:52 INFO  : modbus_data_20260429.csv: Copied (new)
+2026/04/29 03:01:52 ERROR : Attempt 3/3 succeeded
+2026/04/29 03:01:52 INFO  : 
+Transferred:   	    2.991 MiB / 2.991 MiB, 100%, 31.120 KiB/s, ETA 0s
+Checks:               429 / 429, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:      1m50.3s
+
+2026/04/30 03:00:56 ERROR : modbus_data_20260430.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313325 to 314876)
+2026/04/30 03:00:57 INFO  : modbus_data_20260429.csv: Copied (replaced existing)
+2026/04/30 03:00:57 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/30 03:00:57 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/30 03:00:57 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 313325 to 314876)
+2026/04/30 03:01:08 ERROR : modbus_data_20260430.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314876 to 315158)
+2026/04/30 03:01:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/30 03:01:08 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/30 03:01:08 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314876 to 315158)
+2026/04/30 03:01:52 ERROR : modbus_data_20260430.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 315158 to 316427)
+2026/04/30 03:01:52 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/04/30 03:01:52 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/04/30 03:01:52 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 315158 to 316427)
+2026/04/30 03:01:52 INFO  : 
+Transferred:   	    2.970 MiB / 2.970 MiB, 100%, 5.164 KiB/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:               432 / 432, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:      1m50.2s
+
+2026/04/30 03:01:52 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 315158 to 316427)
+2026/05/01 03:01:44 ERROR : modbus_data_20260501.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314636 to 316046)
+2026/05/01 03:01:48 INFO  : modbus_data_20260430.csv: Copied (new)
+2026/05/01 03:01:48 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/05/01 03:01:48 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/05/01 03:01:48 ERROR : Attempt 1/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&keepRevisionForever=false&prettyPrint=false&supportsAllDrives=true&uploadType=multipart": googleapi: Copy failed: can't copy - source file is being updated (size changed from 314636 to 316046)
+2026/05/01 03:01:51 INFO  : modbus_data_20260501.csv: Copied (new)
+2026/05/01 03:01:51 ERROR : Attempt 2/3 succeeded
+2026/05/01 03:01:51 INFO  : 
+Transferred:   	    2.961 MiB / 2.961 MiB, 100%, 137.344 KiB/s, ETA 0s
+Checks:               289 / 289, 100%
+Transferred:            2 / 2, 100%
+Elapsed time:      1m50.0s
+
