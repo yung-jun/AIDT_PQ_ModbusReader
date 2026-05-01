@@ -199,7 +199,7 @@ class MyStorage(BaseStorage):
 ## 版本歷史
 
 - **v2.3.0** - baudrate 38400 → 115200（新版韌體）；實測 read 由 ~146ms 降至 ~126ms
-- **v2.2.0** - 取樣欄位擴充至 16 欄/台（加入 Vab/Vbc/Vca、PF_A/B/C/avg、Q_total）、修正 Frequency 暫存器位址（0x101A → 0x1018）、取樣率調整為 5 Hz、timeout 0.05 → 0.15s
+- **v2.2.0** - 取樣欄位擴充至 16 欄/台（加入 Vab/Vbc/Vca、PF_A/B/C/avg、Q_total）、Frequency 確認為 0x101A（手冊頁 28）、取樣率調整為 5 Hz、timeout 0.05 → 0.15s
 - **v2.1.0** - 取樣速度最佳化：mega block read（18 floats）、baudrate 9600 → 38400、移除 register_delay
 - **v2.0.0** - 模組化重構，物件導向設計
 - **v1.0.0** - 初始版本

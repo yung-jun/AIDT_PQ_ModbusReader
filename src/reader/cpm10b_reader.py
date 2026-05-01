@@ -24,8 +24,8 @@ logger = logging.getLogger(__name__)
 #   index  9 = Ib      (0x1012)  Phase-B Current (A)
 #   index 10 = Ic      (0x1014)  Phase-C Current (A)
 #   index 11 = Iavg    (0x1016)  Average Current (A)         [skipped]
-#   index 12 = Freq    (0x1018)  Frequency (Hz)
-#   index 13 = ---     (0x101A)  Reserved                    [skipped]
+#   index 12 = ---     (0x1018)  Reserved                    [skipped]
+#   index 13 = Freq    (0x101A)  Frequency (Hz)
 #   index 14 = PF_A    (0x101C)  Phase-A Power Factor
 #   index 15 = PF_B    (0x101E)  Phase-B Power Factor
 #   index 16 = PF_C    (0x1020)  Phase-C Power Factor
@@ -66,7 +66,7 @@ class CPM10BReader(ModbusReader):
             {"name": "Ia",        "address": 0x1010, "unit": "A"},
             {"name": "Ib",        "address": 0x1012, "unit": "A"},
             {"name": "Ic",        "address": 0x1014, "unit": "A"},
-            {"name": "Frequency", "address": 0x1018, "unit": "Hz"},
+            {"name": "Frequency", "address": 0x101A, "unit": "Hz"},
             {"name": "PF_A",      "address": 0x101C, "unit": ""},
             {"name": "PF_B",      "address": 0x101E, "unit": ""},
             {"name": "PF_C",      "address": 0x1020, "unit": ""},
@@ -87,7 +87,7 @@ class CPM10BReader(ModbusReader):
         m["Va"],    m["Vb"],    m["Vc"]    = self._r(blk[0]),  self._r(blk[1]),  self._r(blk[2])
         m["Vab"],   m["Vbc"],   m["Vca"]   = self._r(blk[4]),  self._r(blk[5]),  self._r(blk[6])
         m["Ia"],    m["Ib"],    m["Ic"]    = self._r(blk[8]),  self._r(blk[9]),  self._r(blk[10])
-        m["Frequency"]                     = self._r(blk[12])
+        m["Frequency"]                     = self._r(blk[13])
         m["PF_A"],  m["PF_B"],  m["PF_C"] = self._r(blk[14]), self._r(blk[15]), self._r(blk[16])
         m["PF_avg"]                        = self._r(blk[17])
         return True
@@ -103,7 +103,7 @@ class CPM10BReader(ModbusReader):
         ia, ib, ic = self.read_float_block(slave_id, 0x1010, 3)
         m["Ia"], m["Ib"], m["Ic"] = self._r(ia), self._r(ib), self._r(ic)
 
-        m["Frequency"] = self._r(self.read_float_register(slave_id, 0x1018))
+        m["Frequency"] = self._r(self.read_float_register(slave_id, 0x101A))
 
         pf_a, pf_b, pf_c, pf_avg = self.read_float_block(slave_id, 0x101C, 4)
         m["PF_A"],  m["PF_B"],  m["PF_C"] = self._r(pf_a), self._r(pf_b), self._r(pf_c)

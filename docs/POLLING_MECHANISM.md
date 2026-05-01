@@ -129,7 +129,9 @@ while True:
 
 ## CPM-10B 暫存器對照表
 
-每個電表讀取以下 16 個參數（詳細規格見 [cpm_10b_spec.md](cpm_10b_spec.md)）：
+### 目前實際取樣的 16 個參數
+
+詳細規格見 [cpm_10b_spec.md](cpm_10b_spec.md)。暫存器位址已對照官方手冊 V1.2（2025-02）pp.28-29 驗證。
 
 | 參數名稱 | 暫存器地址 | 資料格式 | 單位 | 說明 |
 |----------|------------|----------|------|------|
@@ -142,13 +144,23 @@ while True:
 | Ia | 0x1010 | Float32 | A | A 相電流 |
 | Ib | 0x1012 | Float32 | A | B 相電流 |
 | Ic | 0x1014 | Float32 | A | C 相電流 |
-| Frequency | 0x1018 | Float32 | Hz | 電源頻率 |
+| Frequency | 0x101A | Float32 | Hz | 電源頻率（注意：0x1018 是保留位址） |
 | PF_A | 0x101C | Float32 | — | A 相功率因數 |
 | PF_B | 0x101E | Float32 | — | B 相功率因數 |
 | PF_C | 0x1020 | Float32 | — | C 相功率因數 |
 | PF_avg | 0x1022 | Float32 | — | 三相平均功率因數 |
 | P_total | 0x1032 | Float32 | W | 三相總有功功率 |
 | Q_total | 0x103A | Float32 | VAR | 三相總無功功率 |
+
+### 未取樣但可用的暫存器
+
+| 參數 | 位址 | 用途 |
+|------|------|------|
+| P_A / P_B / P_C | 0x102C / 0x102E / 0x1030 | 每相有功功率（需要單相診斷時可加入） |
+| S_A / S_B / S_C / S_total | 0x103C / 0x103E / 0x1040 / 0x1042 | 每相 / 總視在功率 |
+| AE_total | 0x1408 | 累計有功電能（kWh），自最後一次重置起算 |
+| RE_total | 0x1418 | 累計無功電能（kVARh） |
+| tLrSt（重置） | 0x002B | 寫入 1 → 清除 AE_total / RE_total |
 
 ### Float32 解碼
 
@@ -186,14 +198,14 @@ poll_device(Meter_1):
     ├── read_float_block(0x1000, 18 floats)  → Va[0], Vb[1], Vc[2],
     │                                           Vab[4], Vbc[5], Vca[6],
     │                                           Ia[8], Ib[9], Ic[10],
-    │                                           Frequency[12],
+    │                                           Frequency[13],
     │                                           PF_A[14], PF_B[15], PF_C[16], PF_avg[17]
     └── read_float_block(0x1032, 5 floats)   → P_total[0], Q_total[4]
 
 (重複 Meter_2, Meter_3...)
 ```
 
-中間跳過的 index（3=Vavg, 7=VLavg, 11=Iavg, 13=Reserved）仍在 block 內傳輸，但程式不提取。
+中間跳過的 index（3=Vavg, 7=VLavg, 11=Iavg, 12=Reserved）仍在 block 內傳輸，但程式不提取。
 
 若 mega block 被儀表拒絕，自動降回分拆模式（6 次請求）：
 
@@ -202,7 +214,7 @@ poll_device(Meter_1) [fallback]:
     ├── read_float_block(0x1000, 3) → Va, Vb, Vc
     ├── read_float_block(0x1008, 3) → Vab, Vbc, Vca
     ├── read_float_block(0x1010, 3) → Ia, Ib, Ic
-    ├── read_float_register(0x1018) → Frequency
+    ├── read_float_register(0x101A) → Frequency
     ├── read_float_block(0x101C, 4) → PF_A, PF_B, PF_C, PF_avg
     └── read_float_block(0x1032, 5) → P_total[0], Q_total[4]
 ```

@@ -33,7 +33,7 @@ CPM-10B 的電壓、電流、頻率、功率因數暫存器位於連續的位址
   read(0x1010) → Ia
   read(0x1012) → Ib
   read(0x1014) → Ic
-  read(0x1018) → Frequency
+  read(0x101A) → Frequency
   read(0x1032) → P_total
   （共 8 欄，未含線電壓、PF、Q_total）
 
@@ -60,8 +60,8 @@ CPM-10B 的電壓、電流、頻率、功率因數暫存器位於連續的位址
 | 9 | 0x1012 | **Ib** | 擷取 |
 | 10 | 0x1014 | **Ic** | 擷取 |
 | 11 | 0x1016 | Iavg | 跳過 |
-| 12 | 0x1018 | **Frequency** | 擷取 |
-| 13 | 0x101A | Reserved | 跳過 |
+| 12 | 0x1018 | Reserved | 跳過 |
+| 13 | 0x101A | **Frequency** | 擷取 |
 | 14 | 0x101C | **PF_A** | 擷取 |
 | 15 | 0x101E | **PF_B** | 擷取 |
 | 16 | 0x1020 | **PF_C** | 擷取 |
@@ -135,7 +135,7 @@ log 訊息：Slave X: mega block failed, falling back to split reads
 - 相電壓 block：0x1000, 3 floats（Va/Vb/Vc）
 - 線電壓 block：0x1008, 3 floats（Vab/Vbc/Vca）
 - 電流 block：0x1010, 3 floats（Ia/Ib/Ic）
-- Frequency：0x1018 單次
+- Frequency：0x101A 單次
 - PF block：0x101C, 4 floats（PF_A/PF_B/PF_C/PF_avg）
 - Power block：0x1032, 5 floats（P_total[0] / Q_total[4]）
 
