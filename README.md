@@ -24,11 +24,11 @@ AIDT_PQ_ModbusReader/
 └── logger/                  # 日誌目錄
 ```
 
-## 🚀 Raspberry Pi 部署
+## Raspberry Pi 部署
 
 本專案支援在 Raspberry Pi 上長期運行,適合用於連續數據採集（一個月或更長時間）。
 
-> 📖 **完整部署方案**: 請先閱讀 [Raspberry Pi 部署方案總結](RASPBERRY_PI_DEPLOYMENT_SUMMARY.md) 了解整體架構
+>  **完整部署方案**: 請先閱讀 [Raspberry Pi 部署方案總結](RASPBERRY_PI_DEPLOYMENT_SUMMARY.md) 了解整體架構
 
 ### 快速部署 (30 分鐘)
 
@@ -51,17 +51,17 @@ nano config.json
 
 ### 部署後功能
 
-✅ **自動啟動**: 開機自動啟動 Modbus Reader  
-✅ **雲端備份**: 每天自動同步 CSV 到 Google Drive  
-✅ **自動監控**: 每 5 分鐘檢查系統健康狀態  
-✅ **自動重啟**: 服務異常時自動重啟  
-✅ **日誌管理**: 自動輪轉日誌，避免磁碟空間不足  
+ **自動啟動**: 開機自動啟動 Modbus Reader  
+ **雲端備份**: 每天自動同步 CSV 到 Google Drive  
+ **自動監控**: 每 5 分鐘檢查系統健康狀態  
+ **自動重啟**: 服務異常時自動重啟  
+ **日誌管理**: 自動輪轉日誌，避免磁碟空間不足  
 
 ### 相關文件
 
-- 📖 [輪詢機制說明](docs/POLLING_MECHANISM.md) - Modbus RTU 通訊原理
-- 📖 [腳本機制說明](docs/SCRIPTS_MECHANISM.md) - 自動化腳本說明
-- 📖 [Google Drive 同步](docs/GDRIVE_SYNC_QUICK_GUIDE.md) - 雲端備份設定
+-  [輪詢機制說明](docs/POLLING_MECHANISM.md) - Modbus RTU 通訊原理
+-  [腳本機制說明](docs/SCRIPTS_MECHANISM.md) - 自動化腳本說明
+-  [Google Drive 同步](docs/GDRIVE_SYNC_QUICK_GUIDE.md) - 雲端備份設定
 
 ---
 
