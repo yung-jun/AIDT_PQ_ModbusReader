@@ -1,0 +1,31 @@
+[Unit]
+Description=AIDT PQ Modbus Reader Service
+Documentation=https://github.com/yung-jun/AIDT_PQ_ModbusReader
+After=network.target
+
+[Service]
+Type=simple
+User=__USER__
+Group=__USER__
+WorkingDirectory=__PROJECT_DIR__
+Environment="PATH=__PROJECT_DIR__/venv/bin"
+ExecStart=__PROJECT_DIR__/venv/bin/python run.py
+
+# 自動重啟設定
+Restart=always
+RestartSec=10
+
+# 日誌設定
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=modbus-reader
+
+# 安全性設定
+NoNewPrivileges=true
+
+# 資源限制 (可選)
+# MemoryLimit=512M
+# CPUQuota=50%
+
+[Install]
+WantedBy=multi-user.target

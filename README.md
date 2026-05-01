@@ -13,7 +13,6 @@ AIDT_PQ_ModbusReader/
 │   ├── storage/             # 數據存儲模組
 │   │   ├── base.py             # 存儲基類
 │   │   ├── csv_storage.py      # CSV 存儲
-│   │   ├── sqlite_storage.py   # SQLite 存儲
 │   │   └── manager.py          # 存儲管理器
 │   └── utils/               # 工具模組
 │       └── config.py           # 配置管理
@@ -21,12 +20,60 @@ AIDT_PQ_ModbusReader/
 ├── main.py                  # 主程式入口
 ├── requirements.txt         # Python 依賴
 ├── data/                    # 數據目錄
-│   ├── csv/                # CSV 數據文件
-│   └── modbus_data.db      # SQLite 數據庫
+│   └── csv/                # CSV 數據文件
 └── logger/                  # 日誌目錄
 ```
 
-## 快速開始
+## 🚀 Raspberry Pi 部署
+
+本專案支援在 Raspberry Pi 上長期運行,適合用於連續數據採集（一個月或更長時間）。
+
+> 📖 **完整部署方案**: 請先閱讀 [Raspberry Pi 部署方案總結](RASPBERRY_PI_DEPLOYMENT_SUMMARY.md) 了解整體架構
+
+### 快速部署 (30 分鐘)
+
+```bash
+# 1. 上傳專案到 Raspberry Pi
+scp -r AIDT_PQ_ModbusReader pi@<raspberry-pi-ip>:~/
+
+# 2. SSH 連接並執行自動安裝
+ssh pi@<raspberry-pi-ip>
+cd ~/AIDT_PQ_ModbusReader
+chmod +x scripts/*.sh
+./scripts/setup_raspberry_pi.sh
+
+# 3. 編輯配置 (修改串口為 /dev/ttyUSB0)
+nano config.json
+
+# 4. 安裝為系統服務（會詢問是否設定 Google Drive）
+./scripts/install_service.sh
+```
+
+[WARN] 下一步操作:
+  1. 編輯 config.json，將 serial_port 改為 /dev/ttyUSB0
+  2. 重新登入以使串口權限生效: logout 或 exit
+  3. 測試運行: cd /home/rennpi/AIDT_PQ_ModbusReader && source venv/bin/activate && python run.py
+  4. 設定自動啟動: sudo cp scripts/modbus-reader.service /etc/systemd/system/
+
+
+
+### 部署後功能
+
+✅ **自動啟動**: 開機自動啟動 Modbus Reader  
+✅ **雲端備份**: 每天自動同步 CSV 到 Google Drive  
+✅ **自動監控**: 每 5 分鐘檢查系統健康狀態  
+✅ **自動重啟**: 服務異常時自動重啟  
+✅ **日誌管理**: 自動輪轉日誌，避免磁碟空間不足  
+
+### 相關文件
+
+- 📖 [輪詢機制說明](docs/POLLING_MECHANISM.md) - Modbus RTU 通訊原理
+- 📖 [腳本機制說明](docs/SCRIPTS_MECHANISM.md) - 自動化腳本說明
+- 📖 [Google Drive 同步](docs/GDRIVE_SYNC_QUICK_GUIDE.md) - 雲端備份設定
+
+---
+
+## 快速開始 (Windows/開發環境)
 
 ### 1. 安裝依賴
 
@@ -47,7 +94,7 @@ pip install -r requirements.txt
     ],
     "storage": {
         "enabled": true,
-        "types": ["csv", "sqlite"]
+        "types": ["csv"]
     }
 }
 ```
@@ -66,9 +113,8 @@ python run.py
 - 可同時監測多個設備
 
 ### 數據存儲
-- **CSV 格式**: 方便 Excel 分析
-- **SQLite 數據庫**: 支持複雜查詢
-- 可選擇啟用一種或多種存儲方式
+- **CSV 格式**: 方便 Excel 分析和 Google Drive 同步
+- 自動按日期分檔
 
 ### 模組化設計
 - 基於抽象基類的可擴展架構
@@ -108,13 +154,16 @@ csv_storage.close()
 
 ## 配置說明
 
-| 參數 | 說明 | 默認值 |
+| 參數 | 說明 | 目前值 |
 |------|------|--------|
-| `serial_port` | 串口端口 | COM7 |
-| `baudrate` | 波特率 | 9600 |
-| `poll_interval_sec` | 輪詢間隔(秒) | 5 |
+| `serial_port` | 串口端口 | /dev/ttyUSB0 |
+| `baudrate` | 波特率（需與儀表一致） | 38400 |
+| `timeout_sec` | 通訊超時（秒） | 0.05 |
+| `poll_interval_sec` | 輪詢間隔（秒） | 1 |
 | `storage.enabled` | 啟用存儲 | true |
-| `storage.types` | 存儲類型 | ["csv", "sqlite"] |
+| `storage.types` | 存儲類型 | ["csv"] |
+
+> 取樣速度最佳化說明請參閱 [docs/SAMPLING_OPTIMIZATION.md](docs/SAMPLING_OPTIMIZATION.md)。
 
 ## 擴展開發
 
@@ -155,7 +204,8 @@ class MyStorage(BaseStorage):
 
 ## 版本歷史
 
-- **v2.0.0** - 模組化重構,物件導向設計
+- **v2.1.0** - 取樣速度最佳化：mega block read、baudrate 38400、移除 register_delay
+- **v2.0.0** - 模組化重構，物件導向設計
 - **v1.0.0** - 初始版本
 
 ## 授權

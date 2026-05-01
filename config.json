@@ -1,11 +1,11 @@
 {
-    "serial_port": "COM7",
-    "baudrate": 9600,
+    "serial_port": "/dev/ttyUSB0",
+    "baudrate": 38400,
     "parity": "N",
     "stopbits": 1,
     "databits": 8,
-    "timeout_sec": 1,
-    "poll_interval_sec": 5,
+    "timeout_sec": 0.15,
+    "poll_interval_sec": 0.25,
     "devices": [
         {
             "name": "Meter_1",
@@ -23,10 +23,8 @@
     "storage": {
         "enabled": true,
         "types": [
-            "csv",
-            "sqlite"
+            "csv"
         ],
-        "csv_directory": "data/csv",
-        "sqlite_path": "data/modbus_data.db"
+        "csv_directory": "data/csv"
     }
 }

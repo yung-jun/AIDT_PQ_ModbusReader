@@ -30,7 +30,10 @@ class ModbusReader(ABC):
                 parity=self.config['parity'],
                 stopbits=self.config['stopbits'],
                 bytesize=self.config['databits'],
-                timeout=self.config['timeout_sec']
+                timeout=self.config['timeout_sec'],
+                retries=1,
+                reconnect_delay=0.1,
+                reconnect_delay_max=1.0,
             )
         except Exception as e:
             logger.error(f"Failed to setup Modbus client: {e}")
@@ -66,7 +69,6 @@ class ModbusReader(ABC):
     def read_float_register(self, slave_id: int, start_address: int) -> Optional[float]:
         """讀取 2 個 Register 並轉為 Float"""
         try:
-            # 讀取 2 個暫存器 (4 bytes)
             rr = self.client.read_holding_registers(
                 address=start_address,
                 count=2,
@@ -89,6 +91,31 @@ class ModbusReader(ABC):
         except Exception as e:
             logger.error(f"General Error: {e}")
             return None
+
+    def read_float_block(self, slave_id: int, start_address: int, float_count: int) -> List[Optional[float]]:
+        """一次 RTU 請求讀取多個連續 Float32 暫存器"""
+        try:
+            rr = self.client.read_holding_registers(
+                address=start_address,
+                count=float_count * 2,
+                device_id=slave_id
+            )
+
+            if rr.isError() or isinstance(rr, ExceptionResponse):
+                logger.warning(f"Block read error Addr {hex(start_address)} count={float_count} Slave {slave_id}")
+                return [None] * float_count
+
+            return [
+                self.decode_float(rr.registers[i * 2:(i + 1) * 2])
+                for i in range(float_count)
+            ]
+
+        except ModbusException as e:
+            logger.error(f"Modbus Exception on Slave {slave_id}: {e}")
+            return [None] * float_count
+        except Exception as e:
+            logger.error(f"General Error: {e}")
+            return [None] * float_count
     
     @abstractmethod
     def get_register_map(self) -> List[Dict[str, Any]]:
