@@ -112,7 +112,7 @@ Google Drive (rclone sync)
 ```json
 {
     "serial_port": "/dev/ttyUSB0",
-    "baudrate": 38400,
+    "baudrate": 115200,
     "timeout_sec": 0.15,
     "poll_interval_sec": 0.2,
     "devices": [
@@ -128,7 +128,7 @@ Google Drive (rclone sync)
 }
 ```
 
-> `baudrate: 38400` 需先將每台 CPM-10B 前面板通訊速率改為 38400，詳見 [SAMPLING_OPTIMIZATION.md](SAMPLING_OPTIMIZATION.md)。
+> `baudrate: 115200` 需先將每台 CPM-10B 前面板通訊速率改為 115200（新版韌體），詳見 [SAMPLING_OPTIMIZATION.md](SAMPLING_OPTIMIZATION.md)。
 
 ---
 

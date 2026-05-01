@@ -80,7 +80,7 @@ pip install -r requirements.txt
 ```json
 {
     "serial_port": "/dev/ttyUSB0",
-    "baudrate": 38400,
+    "baudrate": 115200,
     "timeout_sec": 0.15,
     "poll_interval_sec": 0.2,
     "devices": [
@@ -151,7 +151,7 @@ csv_storage.close()
 | 參數 | 說明 | 目前值 |
 |------|------|--------|
 | `serial_port` | 串口端口 | /dev/ttyUSB0 |
-| `baudrate` | 波特率（需與儀表前面板一致） | 38400 |
+| `baudrate` | 波特率（需與儀表前面板一致） | 115200 |
 | `timeout_sec` | 通訊超時（秒） | 0.15 |
 | `poll_interval_sec` | 輪詢間隔（秒），決定取樣率 | 0.2（5 Hz） |
 | `storage.enabled` | 啟用存儲 | true |
@@ -198,6 +198,7 @@ class MyStorage(BaseStorage):
 
 ## 版本歷史
 
+- **v2.3.0** - baudrate 38400 → 115200（新版韌體）；實測 read 由 ~146ms 降至 ~126ms
 - **v2.2.0** - 取樣欄位擴充至 16 欄/台（加入 Vab/Vbc/Vca、PF_A/B/C/avg、Q_total）、修正 Frequency 暫存器位址（0x101A → 0x1018）、取樣率調整為 5 Hz、timeout 0.05 → 0.15s
 - **v2.1.0** - 取樣速度最佳化：mega block read（18 floats）、baudrate 9600 → 38400、移除 register_delay
 - **v2.0.0** - 模組化重構，物件導向設計
