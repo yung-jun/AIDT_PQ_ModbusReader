@@ -129,19 +129,26 @@ while True:
 
 ## CPM-10B 暫存器對照表
 
-每個電表讀取以下 9 個參數：
+每個電表讀取以下 16 個參數（詳細規格見 [cpm_10b_spec.md](cpm_10b_spec.md)）：
 
-| 參數名稱 | 暫存器地址 | 資料格式 | 單位 |
-|----------|------------|----------|------|
-| Va (電壓 A 相) | 0x1000 | Float32 | V |
-| Vb (電壓 B 相) | 0x1002 | Float32 | V |
-| Vc (電壓 C 相) | 0x1004 | Float32 | V |
-| Ia (電流 A 相) | 0x1010 | Float32 | A |
-| Ib (電流 B 相) | 0x1012 | Float32 | A |
-| Ic (電流 C 相) | 0x1014 | Float32 | A |
-| P_total (總功率) | 0x1032 | Float32 | W |
-| Frequency (頻率) | 0x101A | Float32 | Hz |
-| Energy_Total (總電能) | 0x1408 | Float32 | kWh |
+| 參數名稱 | 暫存器地址 | 資料格式 | 單位 | 說明 |
+|----------|------------|----------|------|------|
+| Va | 0x1000 | Float32 | V | A 相電壓 |
+| Vb | 0x1002 | Float32 | V | B 相電壓 |
+| Vc | 0x1004 | Float32 | V | C 相電壓 |
+| Vab | 0x1008 | Float32 | V | A-B 線電壓 |
+| Vbc | 0x100A | Float32 | V | B-C 線電壓 |
+| Vca | 0x100C | Float32 | V | C-A 線電壓 |
+| Ia | 0x1010 | Float32 | A | A 相電流 |
+| Ib | 0x1012 | Float32 | A | B 相電流 |
+| Ic | 0x1014 | Float32 | A | C 相電流 |
+| Frequency | 0x1018 | Float32 | Hz | 電源頻率 |
+| PF_A | 0x101C | Float32 | — | A 相功率因數 |
+| PF_B | 0x101E | Float32 | — | B 相功率因數 |
+| PF_C | 0x1020 | Float32 | — | C 相功率因數 |
+| PF_avg | 0x1022 | Float32 | — | 三相平均功率因數 |
+| P_total | 0x1032 | Float32 | W | 三相總有功功率 |
+| Q_total | 0x103A | Float32 | VAR | 三相總無功功率 |
 
 ### Float32 解碼
 
@@ -163,35 +170,41 @@ def decode_float(registers):
 ```
 時間軸 ──────────────────────────────────────────────────────────────▶
 
-     │◀ Meter_1 ▶│◀ Meter_2 ▶│◀ Meter_3 ▶│◀存儲▶│◀──────── 等待 ──────────▶│
-     ├────────────┼────────────┼────────────┼──────┼──────────────────────────┤
-     0          ~32ms        ~64ms        ~96ms  ~100ms                    1000ms
-     │                                                                       │
-     └───────────────── poll_interval_sec (1秒) ────────────────────────────┘
+     │◀── Meter_1 ──▶│◀── Meter_2 ──▶│◀── Meter_3 ──▶│存儲│◀── 等待 ──▶│
+     ├────────────────┼────────────────┼────────────────┼────┼────────────┤
+     0              ~46ms            ~92ms           ~138ms ~146ms      200ms
+     │                                                                    │
+     └──────────────────── poll_interval_sec (200ms) ────────────────────┘
 
-  3 台最大時間差 ≈ 64ms（最佳化前：~580ms）
+  3 台最大時間差 ≈ 92ms；平均 cycle ≈ 146ms（最佳化前 9600 baud：~864ms）
 ```
 
-### 每個電表的讀取順序（最佳化後：3 次 RTU 請求）
+### 每個電表的讀取順序（最佳化後：2 次 RTU 請求）
 
 ```
 poll_device(Meter_1):
-    ├── read_float_block(0x1000, 14 floats) → Va, Vb, Vc, [skip×5], Ia, Ib, Ic, [skip×2], Freq
-    ├── read_float_register(0x1032)         → P_total
-    └── read_float_register(0x1408)         → Energy_Total
+    ├── read_float_block(0x1000, 18 floats)  → Va[0], Vb[1], Vc[2],
+    │                                           Vab[4], Vbc[5], Vca[6],
+    │                                           Ia[8], Ib[9], Ic[10],
+    │                                           Frequency[12],
+    │                                           PF_A[14], PF_B[15], PF_C[16], PF_avg[17]
+    └── read_float_block(0x1032, 5 floats)   → P_total[0], Q_total[4]
 
 (重複 Meter_2, Meter_3...)
 ```
 
-若 mega block 被儀表拒絕，自動降回分拆模式（5 次請求）：
+中間跳過的 index（3=Vavg, 7=VLavg, 11=Iavg, 13=Reserved）仍在 block 內傳輸，但程式不提取。
+
+若 mega block 被儀表拒絕，自動降回分拆模式（6 次請求）：
 
 ```
 poll_device(Meter_1) [fallback]:
     ├── read_float_block(0x1000, 3) → Va, Vb, Vc
+    ├── read_float_block(0x1008, 3) → Vab, Vbc, Vca
     ├── read_float_block(0x1010, 3) → Ia, Ib, Ic
-    ├── read_float_register(0x101A) → Frequency
-    ├── read_float_register(0x1032) → P_total
-    └── read_float_register(0x1408) → Energy_Total
+    ├── read_float_register(0x1018) → Frequency
+    ├── read_float_block(0x101C, 4) → PF_A, PF_B, PF_C, PF_avg
+    └── read_float_block(0x1032, 5) → P_total[0], Q_total[4]
 ```
 
 > 詳細最佳化原理請參閱 [SAMPLING_OPTIMIZATION.md](SAMPLING_OPTIMIZATION.md)。
@@ -204,8 +217,8 @@ poll_device(Meter_1) [fallback]:
 |------|--------|------|
 | `serial_port` | /dev/ttyUSB0 | RS-485 轉換器裝置路徑 |
 | `baudrate` | **38400** | 傳輸速率 (bps)，需同步設定儀表 |
-| `timeout_sec` | **0.05** | 通訊超時時間 (秒) |
-| `poll_interval_sec` | **1** | 輪詢週期 (秒) |
+| `timeout_sec` | **0.15** | 通訊超時時間 (秒) |
+| `poll_interval_sec` | **0.2** | 輪詢週期 (秒)，對應 5 Hz 取樣率 |
 
 （`register_delay_ms` 已於最佳化時移除，pymodbus 自動處理 RTU 靜默間隔）
 

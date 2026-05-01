@@ -14,7 +14,7 @@ AIDT_PQ_ModbusReader/
 │   ├── storage/             # 數據存儲模組
 │   │   ├── __init__.py
 │   │   ├── base.py             # 存儲基類
-│   │   ├── csv_storage.py      # CSV 存儲
+│   │   ├── csv_storage.py      # CSV 存儲（唯一啟用的後端）
 │   │   └── manager.py          # 存儲管理器
 │   └── utils/               # 工具模組
 │       ├── __init__.py
@@ -27,10 +27,14 @@ AIDT_PQ_ModbusReader/
 │   ├── diagnose.sh             # 診斷腳本
 │   └── modbus-reader.service   # systemd 服務檔案
 ├── docs/                    # 文件
-│   ├── POLLING_MECHANISM.md    # 輪詢原理
-│   ├── SCRIPTS_MECHANISM.md    # 腳本機制
-│   ├── GDRIVE_SYNC_QUICK_GUIDE.md  # Google Drive 設定
-│   └── cpm_10b_spec.md         # CPM-10B 規格
+│   ├── POLLING_MECHANISM.md         # 輪詢原理與時序
+│   ├── SAMPLING_OPTIMIZATION.md     # 取樣速度最佳化說明
+│   ├── SAMPLING_LIMIT_REPORT.md     # 取樣極限研究報告（實測數據）
+│   ├── CSV_FORMAT.md                # CSV 欄位定義（使用者手冊）
+│   ├── INCIDENT_20260501_SSH_UNREACHABLE.md  # 事故報告
+│   ├── SCRIPTS_MECHANISM.md         # 自動化腳本說明
+│   ├── GDRIVE_SYNC_QUICK_GUIDE.md   # Google Drive 設定
+│   └── cpm_10b_spec.md              # CPM-10B 暫存器規格
 ├── data/                    # 數據目錄
 │   └── csv/                    # CSV 檔案
 ├── logger/                  # 日誌目錄
@@ -60,7 +64,7 @@ run.py → src/main.py
 │  │ 1. 產生時間戳記                     │ │
 │  │ 2. 依序讀取 Meter_1, 2, 3          │ │
 │  │ 3. 合併存儲到 CSV                   │ │
-│  │ 4. 等待至下個週期 (1秒)             │ │
+│  │ 4. 等待至下個週期 (200ms, 5 Hz)      │ │
 │  └────────────────────────────────────┘ │
 └─────────────────────────────────────────┘
   │
@@ -109,8 +113,8 @@ Google Drive (rclone sync)
 {
     "serial_port": "/dev/ttyUSB0",
     "baudrate": 38400,
-    "timeout_sec": 0.05,
-    "poll_interval_sec": 1,
+    "timeout_sec": 0.15,
+    "poll_interval_sec": 0.2,
     "devices": [
         {"name": "Meter_1", "slave_id": 1},
         {"name": "Meter_2", "slave_id": 2},
@@ -133,7 +137,9 @@ Google Drive (rclone sync)
 | 文件 | 說明 |
 |------|------|
 | [POLLING_MECHANISM.md](POLLING_MECHANISM.md) | Modbus RTU 通訊原理與輪詢時序 |
-| [SAMPLING_OPTIMIZATION.md](SAMPLING_OPTIMIZATION.md) | 取樣速度最佳化說明（2026-05） |
+| [SAMPLING_OPTIMIZATION.md](SAMPLING_OPTIMIZATION.md) | 取樣速度最佳化說明 |
+| [SAMPLING_LIMIT_REPORT.md](SAMPLING_LIMIT_REPORT.md) | 取樣極限實測報告（含單台瓶頸分析） |
+| [CSV_FORMAT.md](CSV_FORMAT.md) | CSV 欄位定義與使用說明 |
 | [INCIDENT_20260501_SSH_UNREACHABLE.md](INCIDENT_20260501_SSH_UNREACHABLE.md) | 事故報告：SSH 無法連線（2026-05-01） |
 | [SCRIPTS_MECHANISM.md](SCRIPTS_MECHANISM.md) | 自動化腳本說明 |
 | [GDRIVE_SYNC_QUICK_GUIDE.md](GDRIVE_SYNC_QUICK_GUIDE.md) | Google Drive 設定 |

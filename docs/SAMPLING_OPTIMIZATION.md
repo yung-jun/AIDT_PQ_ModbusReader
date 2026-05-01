@@ -23,7 +23,7 @@
 
 ### 1. Mega Block Read（最大貢獻）
 
-CPM-10B 的電壓、電流、頻率暫存器位於連續的位址群（0x1000–0x101A），可在 **1 次 RTU 請求**內全部取回。
+CPM-10B 的電壓、電流、頻率、功率因數暫存器位於連續的位址群（0x1000–0x1022），可在 **1 次 RTU 請求**（18 floats）內全部取回。
 
 ```
 舊做法（9 次獨立請求）：
@@ -33,32 +33,51 @@ CPM-10B 的電壓、電流、頻率暫存器位於連續的位址群（0x1000–
   read(0x1010) → Ia
   read(0x1012) → Ib
   read(0x1014) → Ic
-  read(0x101A) → Frequency
+  read(0x1018) → Frequency
   read(0x1032) → P_total
-  read(0x1408) → Energy_Total
+  （共 8 欄，未含線電壓、PF、Q_total）
 
-新做法（3 次請求）：
-  block_read(0x1000, 14 floats) → Va[0] Vb[1] Vc[2] ... Ia[8] Ib[9] Ic[10] ... Freq[13]
-  read(0x1032)                  → P_total
-  read(0x1408)                  → Energy_Total
+新做法（2 次請求，16 欄）：
+  block_read(0x1000, 18 floats) → Va[0] Vb[1] Vc[2] Vab[4] Vbc[5] Vca[6]
+                                   Ia[8] Ib[9] Ic[10] Freq[12]
+                                   PF_A[14] PF_B[15] PF_C[16] PF_avg[17]
+  block_read(0x1032, 5 floats)  → P_total[0] Q_total[4]
 ```
 
-**Mega block 位址佈局（Float32，每個 2 個 word）：**
+**Mega block 位址佈局（0x1000 起，Float32，每個 2 個 word）：**
 
-| Float Index | 位址 | 擷取欄位 |
-|-------------|------|---------|
-| 0 | 0x1000 | Va |
-| 1 | 0x1002 | Vb |
-| 2 | 0x1004 | Vc |
-| 3–7 | 0x1006–0x100E | 跳過（Vab/Vbc/Vca 等線電壓） |
-| 8 | 0x1010 | Ia |
-| 9 | 0x1012 | Ib |
-| 10 | 0x1014 | Ic |
-| 11–12 | 0x1016–0x1018 | 跳過（In/Iavg 等） |
-| 13 | 0x101A | Frequency |
+| Float Index | 位址 | 欄位 | 備註 |
+|-------------|------|------|------|
+| 0 | 0x1000 | **Va** | 擷取 |
+| 1 | 0x1002 | **Vb** | 擷取 |
+| 2 | 0x1004 | **Vc** | 擷取 |
+| 3 | 0x1006 | Vavg | 跳過 |
+| 4 | 0x1008 | **Vab** | 擷取 |
+| 5 | 0x100A | **Vbc** | 擷取 |
+| 6 | 0x100C | **Vca** | 擷取 |
+| 7 | 0x100E | VLavg | 跳過 |
+| 8 | 0x1010 | **Ia** | 擷取 |
+| 9 | 0x1012 | **Ib** | 擷取 |
+| 10 | 0x1014 | **Ic** | 擷取 |
+| 11 | 0x1016 | Iavg | 跳過 |
+| 12 | 0x1018 | **Frequency** | 擷取 |
+| 13 | 0x101A | Reserved | 跳過 |
+| 14 | 0x101C | **PF_A** | 擷取 |
+| 15 | 0x101E | **PF_B** | 擷取 |
+| 16 | 0x1020 | **PF_C** | 擷取 |
+| 17 | 0x1022 | **PF_avg** | 擷取 |
 
-> 中間位址（index 3–7、11–12）必須是儀表上有效的暫存器，否則 block read 會失敗。
-> CPM-10B/CPM-80 為全功能電力分析儀，這些位址應對應線電壓與中性電流，應為有效。
+**Power block 位址佈局（0x1032 起，5 floats）：**
+
+| Float Index | 位址 | 欄位 | 備註 |
+|-------------|------|------|------|
+| 0 | 0x1032 | **P_total** | 擷取 |
+| 1 | 0x1034 | Q_A | 跳過 |
+| 2 | 0x1036 | Q_B | 跳過 |
+| 3 | 0x1038 | Q_C | 跳過 |
+| 4 | 0x103A | **Q_total** | 擷取 |
+
+> 跳過的 index 仍在 RTU 訊框內傳輸，只是程式不提取其值。所有位址均為 CPM-10B 有效暫存器（來源：A21-02-CPM-10B-Manual-EN-V12-251113.pdf）。
 
 ### 2. Baudrate 9600 → 38400
 
@@ -71,13 +90,13 @@ RS-485 鏈路速率提升 4 倍，每次 RTU 訊框傳輸時間減少 75%。
 原本每個暫存器讀取之間加入 10ms 延遲（共 90ms/台），實際上是不必要的。
 pymodbus 已在協定層自動遵守 Modbus RTU 的 3.5-char 靜默間隔（38400 baud 時約 0.9ms）。
 
-### 4. Timeout 0.3s → 0.05s
+### 4. Timeout 0.3s → 0.15s
 
-在 38400 baud 下，最長的回應（mega block，~65 bytes）約 18ms 即可完成，0.05s 仍有 2.7 倍餘裕。
+在 38400 baud 下，mega block 回應（~77 bytes）約 20ms 傳輸完成，加上 CPM-10B 韌體延遲 ~10ms，0.15s 仍有充足餘裕，並可在通訊中斷時快速 fail-fast。
 
-### 5. Poll Interval 5s → 1s
+### 5. Poll Interval 5s → 0.2s（5 Hz）
 
-實際輪詢時間遠低於 1s，可安全縮短輪詢週期。
+實際輪詢時間約 146ms，0.2s 週期在扣除 read 耗時後仍有 ~54ms sleep，足以維持精確取樣率並確保 SSH 存活。
 
 ---
 
@@ -85,39 +104,42 @@ pymodbus 已在協定層自動遵守 Modbus RTU 的 3.5-char 靜默間隔（3840
 
 ### RTU 訊框傳輸時間計算（38400 baud，10 bits/byte）
 
-| 請求類型 | 請求 | 靜默 | 回應 | 合計 |
-|---------|------|------|------|------|
-| Mega block (28 regs) | 8 bytes ≈ 2.1ms | 0.9ms | ~65 bytes ≈ 17ms | **~20ms** |
-| 單一 Float32 (2 regs) | 8 bytes ≈ 2.1ms | 0.9ms | ~10 bytes ≈ 2.6ms | **~6ms** |
+| 請求類型 | 請求 | 靜默 | 回應 | 傳輸合計 | +韌體延遲 | 總計 |
+|---------|------|------|------|---------|---------|------|
+| Mega block（18 floats = 36 regs） | 8 bytes ≈ 2ms | 1ms | ~77 bytes ≈ 20ms | ~23ms | ~10ms | **~33ms** |
+| Power block（5 floats = 10 regs） | 8 bytes ≈ 2ms | 1ms | ~25 bytes ≈ 7ms | ~10ms | ~10ms | **~20ms** |
+| 每台小計（2 次請求） | — | — | — | — | — | **~53ms** |
 
 ### 每輪時間估算
 
 | | 9600 baud（舊） | 38400 baud（新） |
 |--|---------------|----------------|
-| 請求次數/台 | 9 次 | 3 次 |
-| 每台耗時 | ~22ms×9 + 10ms×9 = **288ms** | ~20ms + 6ms×2 = **~32ms** |
-| 3 台合計 | **~864ms** | **~96ms** |
-| 3 台最大時間差 | ~578ms | ~64ms |
-| poll_interval_sec | 5s | 1s |
+| 請求次數/台 | 9 次 | **2 次** |
+| 每台耗時（傳輸 + 韌體） | ~288ms | **~46ms** |
+| 3 台合計（理論） | ~864ms | ~138ms |
+| 3 台合計（實測平均） | — | **~146ms** |
+| 3 台最大時間差 | ~578ms | ~92ms |
+| poll_interval_sec | 5s | **0.2s（5 Hz）** |
 
 ---
 
 ## 自動降回機制
 
-若 mega block 讀取失敗（儀表拒絕中間位址），程式自動切換為 **分拆模式（5 次請求）**，不中斷資料收集。
+若 mega block 讀取失敗（儀表拒絕中間位址），程式自動切換為 **分拆模式（6 次請求）**，不中斷資料收集。
 
 ```
 log 訊息：Slave X: mega block failed, falling back to split reads
 ```
 
 分拆模式下：
-- 電壓 block：0x1000, 3 floats（Va/Vb/Vc）
+- 相電壓 block：0x1000, 3 floats（Va/Vb/Vc）
+- 線電壓 block：0x1008, 3 floats（Vab/Vbc/Vca）
 - 電流 block：0x1010, 3 floats（Ia/Ib/Ic）
-- Frequency：0x101A 單次
-- P_total：0x1032 單次
-- Energy_Total：0x1408 單次
+- Frequency：0x1018 單次
+- PF block：0x101C, 4 floats（PF_A/PF_B/PF_C/PF_avg）
+- Power block：0x1032, 5 floats（P_total[0] / Q_total[4]）
 
-降回後效能退回至 38400 baud × 5 次 ≈ **62ms/台，~186ms/輪**，仍比舊版 9600 baud 快約 4.6 倍。
+降回後效能退回至 38400 baud × 6 次 ≈ **78ms/台，~234ms/輪**，仍比舊版 9600 baud 快約 3.7 倍。
 
 ---
 
@@ -141,8 +163,8 @@ log 訊息：Slave X: mega block failed, falling back to split reads
 ```json
 {
     "baudrate": 38400,
-    "timeout_sec": 0.05,
-    "poll_interval_sec": 1
+    "timeout_sec": 0.15,
+    "poll_interval_sec": 0.2
 }
 ```
 

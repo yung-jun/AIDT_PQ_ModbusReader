@@ -5,7 +5,7 @@
     "stopbits": 1,
     "databits": 8,
     "timeout_sec": 0.15,
-    "poll_interval_sec": 0.25,
+    "poll_interval_sec": 0.2,
     "devices": [
         {
             "name": "Meter_1",

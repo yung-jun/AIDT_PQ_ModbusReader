@@ -17,7 +17,7 @@ AIDT_PQ_ModbusReader/
 │   └── utils/               # 工具模組
 │       └── config.py           # 配置管理
 ├── config.json              # 配置文件
-├── main.py                  # 主程式入口
+├── run.py                   # 程式入口
 ├── requirements.txt         # Python 依賴
 ├── data/                    # 數據目錄
 │   └── csv/                # CSV 數據文件
@@ -49,14 +49,6 @@ nano config.json
 ./scripts/install_service.sh
 ```
 
-[WARN] 下一步操作:
-  1. 編輯 config.json，將 serial_port 改為 /dev/ttyUSB0
-  2. 重新登入以使串口權限生效: logout 或 exit
-  3. 測試運行: cd /home/rennpi/AIDT_PQ_ModbusReader && source venv/bin/activate && python run.py
-  4. 設定自動啟動: sudo cp scripts/modbus-reader.service /etc/systemd/system/
-
-
-
 ### 部署後功能
 
 ✅ **自動啟動**: 開機自動啟動 Modbus Reader  
@@ -87,14 +79,17 @@ pip install -r requirements.txt
 
 ```json
 {
-    "serial_port": "COM7",
-    "baudrate": 9600,
+    "serial_port": "/dev/ttyUSB0",
+    "baudrate": 38400,
+    "timeout_sec": 0.15,
+    "poll_interval_sec": 0.2,
     "devices": [
         {"name": "Meter_1", "slave_id": 1}
     ],
     "storage": {
         "enabled": true,
-        "types": ["csv"]
+        "types": ["csv"],
+        "csv_directory": "data/csv"
     }
 }
 ```
@@ -109,8 +104,8 @@ python run.py
 
 ### 數據讀取
 - 支援 CPM-10B 電力品質分析儀
-- 讀取電壓、電流、功率、頻率、電能等參數
-- 可同時監測多個設備
+- 讀取相電壓、線電壓、電流、功率因數、有功/無功功率、頻率（16 欄/台）
+- 可同時監測多個設備（目前 3 台，5 Hz 取樣）
 
 ### 數據存儲
 - **CSV 格式**: 方便 Excel 分析和 Google Drive 同步
@@ -144,9 +139,8 @@ if reader.connect():
 ### 自定義存儲
 
 ```python
-from src.storage import CSVStorage, SQLiteStorage
+from src.storage import CSVStorage
 
-# 只使用 CSV 存儲
 csv_storage = CSVStorage("custom/path")
 csv_storage.save(data)
 csv_storage.close()
@@ -157,9 +151,9 @@ csv_storage.close()
 | 參數 | 說明 | 目前值 |
 |------|------|--------|
 | `serial_port` | 串口端口 | /dev/ttyUSB0 |
-| `baudrate` | 波特率（需與儀表一致） | 38400 |
-| `timeout_sec` | 通訊超時（秒） | 0.05 |
-| `poll_interval_sec` | 輪詢間隔（秒） | 1 |
+| `baudrate` | 波特率（需與儀表前面板一致） | 38400 |
+| `timeout_sec` | 通訊超時（秒） | 0.15 |
+| `poll_interval_sec` | 輪詢間隔（秒），決定取樣率 | 0.2（5 Hz） |
 | `storage.enabled` | 啟用存儲 | true |
 | `storage.types` | 存儲類型 | ["csv"] |
 
@@ -204,7 +198,8 @@ class MyStorage(BaseStorage):
 
 ## 版本歷史
 
-- **v2.1.0** - 取樣速度最佳化：mega block read、baudrate 38400、移除 register_delay
+- **v2.2.0** - 取樣欄位擴充至 16 欄/台（加入 Vab/Vbc/Vca、PF_A/B/C/avg、Q_total）、修正 Frequency 暫存器位址（0x101A → 0x1018）、取樣率調整為 5 Hz、timeout 0.05 → 0.15s
+- **v2.1.0** - 取樣速度最佳化：mega block read（18 floats）、baudrate 9600 → 38400、移除 register_delay
 - **v2.0.0** - 模組化重構，物件導向設計
 - **v1.0.0** - 初始版本
 

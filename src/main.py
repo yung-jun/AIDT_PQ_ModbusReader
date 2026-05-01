@@ -59,7 +59,7 @@ def main():
                 # serial I/O timeout 為 kernel blocking，不燒 CPU；
                 # 0.1s 底限確保 SSH 不被 starvation，同時允許 ~5 Hz 取樣。
                 elapsed = time.time() - start_time
-                sleep_time = max(0.06, config['poll_interval_sec'] - elapsed)
+                sleep_time = max(0.01, config['poll_interval_sec'] - elapsed)
                 cycle_count += 1
                 if cycle_count % 50 == 0:
                     logger.info(f"Cycle #{cycle_count}: read={elapsed*1000:.1f}ms  sleep={sleep_time*1000:.1f}ms  total={(elapsed+sleep_time)*1000:.1f}ms")
