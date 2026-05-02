@@ -36,6 +36,7 @@ env/
 # Logs
 *.log
 logger/*.log
+logger/*.log.detailed
 
 # Data files
 data/csv/*.csv

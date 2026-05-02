@@ -95,6 +95,7 @@ if rclone sync "$SOURCE_DIR" "$GDRIVE_REMOTE" \
     --transfers 4 \
     --checkers 8 \
     --stats 1m \
+    --min-age 1h \
     --log-file "$LOG_FILE.detailed" \
     --log-level INFO; then
     log_info "同步成功"

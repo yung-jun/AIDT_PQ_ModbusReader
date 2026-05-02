@@ -1721,3 +1721,79 @@ Checks:               289 / 289, 100%
 Transferred:            2 / 2, 100%
 Elapsed time:      1m50.0s
 
+2026/05/02 03:00:06 ERROR : modbus_data_20260502.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AAVLpEilByvmpP7nAXG_czc7MTf99tT1Hs8Wi_ZX6OpZF_4c8UvwifIsACfjo4Ca0FvIX2_TvDU9_ohCVwAC8KERT47ddhyjFdpRAs52ULoZFw&session_crd=AHSoBRWtUXK5c6sjDl2QsBIkI-_Be4d8htPlW3LsO670-HVaXqYveF_2sCSdZv3UXT_OpH13C0ouSRVNfqE": can't copy - source file is being updated (size changed from 12064775 to 12065209)
+2026/05/02 03:19:49 ERROR : modbus_data_20260501.csv: Failed to copy: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/05/02 03:19:49 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/05/02 03:19:49 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/05/02 03:19:49 ERROR : Attempt 1/3 failed with 2 errors and: googleapi: Error 403: Quota exceeded for quota metric 'Queries' and limit 'Queries per minute' of service 'drive.googleapis.com' for consumer 'project_number:202264815644'.
+Details:
+[
+  {
+    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+    "domain": "googleapis.com",
+    "metadata": {
+      "consumer": "projects/202264815644",
+      "quota_limit": "defaultPerMinutePerProject",
+      "quota_limit_value": "840000",
+      "quota_location": "global",
+      "quota_metric": "drive.googleapis.com/default",
+      "quota_unit": "1/min/{project}",
+      "service": "drive.googleapis.com"
+    },
+    "reason": "RATE_LIMIT_EXCEEDED"
+  },
+  {
+    "@type": "type.googleapis.com/google.rpc.Help",
+    "links": [
+      {
+        "description": "Request a higher quota limit.",
+        "url": "https://cloud.google.com/docs/quotas/help/request_increase"
+      }
+    ]
+  }
+]
+, rateLimitExceeded
+2026/05/02 03:20:56 ERROR : modbus_data_20260502.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AAVLpEhR3nhfoMhUBFHP-Ep3ZslSSG0qNChKvxsN_DCCz36hpc18CWMA1LUl06hKtml0XuD8ydsighSqkuGvkQx0CiQy8P95ePR2ie9h-kBgNUU&session_crd=AHSoBRV_c7JyoLc_kJrIDdq1Z0xjBzRE8Esmc8DMQPoTCmm9IHkwvM7CmU3BlraSvr75FIcMiZ8pTNkwnF0": can't copy - source file is being updated (size changed from 13350717 to 13404316)
+2026/05/02 03:21:02 INFO  : modbus_data_20260501.csv: Copied (replaced existing)
+2026/05/02 03:21:02 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/05/02 03:21:02 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/05/02 03:21:02 ERROR : Attempt 2/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AAVLpEhR3nhfoMhUBFHP-Ep3ZslSSG0qNChKvxsN_DCCz36hpc18CWMA1LUl06hKtml0XuD8ydsighSqkuGvkQx0CiQy8P95ePR2ie9h-kBgNUU&session_crd=AHSoBRV_c7JyoLc_kJrIDdq1Z0xjBzRE8Esmc8DMQPoTCmm9IHkwvM7CmU3BlraSvr75FIcMiZ8pTNkwnF0": can't copy - source file is being updated (size changed from 13350717 to 13404316)
+2026/05/02 03:21:04 ERROR : modbus_data_20260502.csv: Failed to copy: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AAVLpEgf4-ZpqfiSghfAfPVROwdbDHXBRottvlWlZkGQoKC3bxrW-NJAy7mZHoif7U9Fq1GC-URhvf9K8-whzNonKRjTv1r1oRNBn7mXwyuhaA&session_crd=AHSoBRW9HTf2BMG_SrQko3s3qPey9Gvkfc29H02F8w3QJ5uMCkYX4Cg-wXVQO8CjDIeJPo4Xl6Oxj-aMKEY": can't copy - source file is being updated (size changed from 13430356 to 13431007)
+2026/05/02 03:21:04 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting files as there were IO errors
+2026/05/02 03:21:04 ERROR : Google drive root 'AIDT_PQ_ModbusReader/csv': not deleting directories as there were IO errors
+2026/05/02 03:21:04 ERROR : Attempt 3/3 failed with 1 errors and: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AAVLpEgf4-ZpqfiSghfAfPVROwdbDHXBRottvlWlZkGQoKC3bxrW-NJAy7mZHoif7U9Fq1GC-URhvf9K8-whzNonKRjTv1r1oRNBn7mXwyuhaA&session_crd=AHSoBRW9HTf2BMG_SrQko3s3qPey9Gvkfc29H02F8w3QJ5uMCkYX4Cg-wXVQO8CjDIeJPo4Xl6Oxj-aMKEY": can't copy - source file is being updated (size changed from 13430356 to 13431007)
+2026/05/02 03:21:04 INFO  : 
+Transferred:   	  102.092 MiB / 102.092 MiB, 100%, 40 B/s, ETA 0s
+Errors:                 1 (retrying may help)
+Checks:                 3 / 3, 100%
+Transferred:            1 / 1, 100%
+Elapsed time:      21m2.2s
+
+2026/05/02 03:21:04 Failed to sync: Post "https://www.googleapis.com/upload/drive/v3/files?alt=json&fields=id%2Cname%2Csize%2Cmd5Checksum%2Ctrashed%2CexplicitlyTrashed%2CmodifiedTime%2CcreatedTime%2CmimeType%2Cparents%2CwebViewLink%2CshortcutDetails%2CexportLinks%2CresourceKey&supportsAllDrives=true&uploadType=resumable&upload_id=AAVLpEgf4-ZpqfiSghfAfPVROwdbDHXBRottvlWlZkGQoKC3bxrW-NJAy7mZHoif7U9Fq1GC-URhvf9K8-whzNonKRjTv1r1oRNBn7mXwyuhaA&session_crd=AHSoBRW9HTf2BMG_SrQko3s3qPey9Gvkfc29H02F8w3QJ5uMCkYX4Cg-wXVQO8CjDIeJPo4Xl6Oxj-aMKEY": can't copy - source file is being updated (size changed from 13430356 to 13431007)
